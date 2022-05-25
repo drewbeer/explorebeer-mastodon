@@ -1025,7 +1025,7 @@ en:
   directories:
     directory: Profile directory
     explanation: Discover users based on their interests
-    explore_mastodon: %{title}
+    explore_mastodon: Explore Beer
   disputes:
     strikes:
       action_taken: Action taken
