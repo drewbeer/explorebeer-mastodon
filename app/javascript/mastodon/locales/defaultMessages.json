@@ -1112,7 +1112,7 @@
         "id": "column.community"
       },
       {
-        "defaultMessage": "The local timeline is empty. Write something publicly to get the ball rolling!",
+        "defaultMessage": "There is nothing here? I guess its time for a beer",
         "id": "empty_column.community"
       }
     ],
@@ -1546,7 +1546,7 @@
         "id": "compose_form.hashtag_warning"
       },
       {
-        "defaultMessage": "Posts on Mastodon are not end-to-end encrypted. Do not share any dangerous information over Mastodon.",
+        "defaultMessage": "Posts on Explore Beer are not end-to-end encrypted. Do not share any dangerous information.",
         "id": "compose_form.encryption_warning"
       },
       {
@@ -1658,7 +1658,7 @@
         "id": "column.direct"
       },
       {
-        "defaultMessage": "Posts on Mastodon are not end-to-end encrypted. Do not share any dangerous information over Mastodon.",
+        "defaultMessage": "Posts on Explore Beer are not end-to-end encrypted. Do not share any dangerous information.",
         "id": "compose_form.encryption_warning"
       },
       {
@@ -2643,7 +2643,7 @@
         "id": "notifications_permission_banner.title"
       },
       {
-        "defaultMessage": "To receive notifications when Mastodon isn't open, enable desktop notifications. You can control precisely which types of interactions generate desktop notifications through the {icon} button above once they're enabled.",
+        "defaultMessage": "To receive notifications when Explore Beer isn't open, enable desktop notifications. You can control precisely which types of interactions generate desktop notifications through the {icon} button above once they're enabled.",
         "id": "notifications_permission_banner.how_to_control"
       },
       {
@@ -3448,7 +3448,7 @@
         "id": "getting_started.security"
       },
       {
-        "defaultMessage": "About this server",
+        "defaultMessage": "About",
         "id": "navigation_bar.info"
       },
       {
@@ -3456,7 +3456,7 @@
         "id": "getting_started.directory"
       },
       {
-        "defaultMessage": "Mobile apps",
+        "defaultMessage": "Apps",
         "id": "navigation_bar.apps"
       },
       {
@@ -3476,7 +3476,7 @@
         "id": "navigation_bar.logout"
       },
       {
-        "defaultMessage": "Mastodon is open source software. You can contribute or report issues on GitHub at {github}.",
+        "defaultMessage": "Explore Beer is run on opensource, more info at {github}.",
         "id": "getting_started.open_source_notice"
       }
     ],

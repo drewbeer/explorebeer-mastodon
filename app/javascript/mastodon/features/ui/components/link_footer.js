@@ -51,7 +51,7 @@ class LinkFooter extends React.PureComponent {
           {invitesEnabled && <li><a href='/invites' target='_blank'><FormattedMessage id='getting_started.invite' defaultMessage='Invite people' /></a> · </li>}
           {withHotkeys && <li><Link to='/keyboard-shortcuts'><FormattedMessage id='navigation_bar.keyboard_shortcuts' defaultMessage='Hotkeys' /></Link> · </li>}
           <li><a href='/auth/edit'><FormattedMessage id='getting_started.security' defaultMessage='Security' /></a> · </li>
-          {!limitedFederationMode && <li><a href='/about/more' target='_blank'><FormattedMessage id='navigation_bar.info' defaultMessage='About this server' /></a> · </li>}
+          {!limitedFederationMode && <li><a href='/about/more' target='_blank'><FormattedMessage id='navigation_bar.info' defaultMessage='About' /></a> · </li>}
           {profileDirectory && <li><Link to='/directory'><FormattedMessage id='getting_started.directory' defaultMessage='Profile directory' /></Link> · </li>}
           <li><a href='https://joinmastodon.org/apps' target='_blank'><FormattedMessage id='navigation_bar.apps' defaultMessage='Mobile apps' /></a> · </li>
           <li><a href='/terms' target='_blank'><FormattedMessage id='getting_started.terms' defaultMessage='Terms of service' /></a> · </li>
@@ -63,8 +63,8 @@ class LinkFooter extends React.PureComponent {
         <p>
           <FormattedMessage
             id='getting_started.open_source_notice'
-            defaultMessage='Mastodon is open source software. You can contribute or report issues on GitHub at {github}.'
-            values={{ github: <span><a href={source_url} rel='noopener noreferrer' target='_blank'>{repository}</a> (v{version})</span> }}
+            defaultMessage='Explore Beer runs on opensource, more information on {github}.'
+            values={{ github: <span><a href={source_url} rel='noopener noreferrer' target='_blank'>Github</a> (v{version})</span> }}
           />
         </p>
       </div>
