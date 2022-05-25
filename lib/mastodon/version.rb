@@ -17,11 +17,11 @@ module Mastodon
     end
 
     def flags
-      ''
+      '-beer'
     end
 
     def suffix
-      ''
+      '-1'
     end
 
     def to_a
