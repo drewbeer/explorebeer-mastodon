@@ -53,17 +53,15 @@ class LinkFooter extends React.PureComponent {
           <li><a href='/auth/edit'><FormattedMessage id='getting_started.security' defaultMessage='Security' /></a> · </li>
           {!limitedFederationMode && <li><a href='/about/more' target='_blank'><FormattedMessage id='navigation_bar.info' defaultMessage='About' /></a> · </li>}
           {profileDirectory && <li><Link to='/directory'><FormattedMessage id='getting_started.directory' defaultMessage='Profile directory' /></Link> · </li>}
-          <li><a href='https://joinmastodon.org/apps' target='_blank'><FormattedMessage id='navigation_bar.apps' defaultMessage='Mobile apps' /></a> · </li>
-          <li><a href='/terms' target='_blank'><FormattedMessage id='getting_started.terms' defaultMessage='Terms of service' /></a> · </li>
-          <li><a href='/settings/applications' target='_blank'><FormattedMessage id='getting_started.developers' defaultMessage='Developers' /></a> · </li>
-          <li><a href='https://docs.joinmastodon.org' target='_blank'><FormattedMessage id='getting_started.documentation' defaultMessage='Documentation' /></a> · </li>
+          <li><a href='https://joinmastodon.org/apps' target='_blank'><FormattedMessage id='navigation_bar.apps' defaultMessage='Apps' /></a> · </li>
+          <li><a href='/terms' target='_blank'><FormattedMessage id='getting_started.terms' defaultMessage='Legal stuff' /></a> · </li>
           <li><a href='/auth/sign_out' onClick={this.handleLogoutClick}><FormattedMessage id='navigation_bar.logout' defaultMessage='Logout' /></a></li>
         </ul>
 
         <p>
           <FormattedMessage
             id='getting_started.open_source_notice'
-            defaultMessage='Explore Beer runs on opensource, more information on {github}.'
+            defaultMessage='Explore Beer runs on opensource, more information at {github}.'
             values={{ github: <span><a href={source_url} rel='noopener noreferrer' target='_blank'>Github</a> (v{version})</span> }}
           />
         </p>
