@@ -1546,7 +1546,7 @@
         "id": "compose_form.hashtag_warning"
       },
       {
-        "defaultMessage": "Posts on Explore Beer are not end-to-end encrypted. Do not share any dangerous information.",
+        "defaultMessage": "Posts on Explore Beer are not end-to-end encrypted. Do not share any sensitive information.",
         "id": "compose_form.encryption_warning"
       },
       {
