@@ -48,7 +48,9 @@ push image:
 
 cleanup:
   stage: cleanup
-  when: always
+  only:
+    - main
+    - tags
   script:
     - docker rmi -f "$IMAGE_TAG"
 
