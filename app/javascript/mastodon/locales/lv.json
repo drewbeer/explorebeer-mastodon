@@ -93,7 +93,7 @@
   "community.column_settings.media_only": "Tikai mediji",
   "community.column_settings.remote_only": "Tikai attālinātie",
   "compose_form.direct_message_warning_learn_more": "Uzzināt vairāk",
-  "compose_form.encryption_warning": "Ziņas vietnē Mastodon nav pilnībā šifrētas. Nedalies ar bīstamu informāciju caur Mastodon.",
+  "compose_form.encryption_warning": "Ziņas vietnē Mastodon nav pilnībā šifrētas. Nedalies ar sensitīvu informāciju caur Mastodon.",
   "compose_form.hashtag_warning": "Ziņojumu nebūs iespējams atrast zem haštagiem jo tas nav publisks. Tikai publiskos ziņojumus ir iespējams meklēt pēc tiem.",
   "compose_form.lock_disclaimer": "Tavs konts nav {locked}. Ikviens var Tev sekot lai apskatītu tikai sekotājiem paredzētos ziņojumus.",
   "compose_form.lock_disclaimer.lock": "slēgts",
