@@ -11,8 +11,7 @@
   "extensions": [
     "EditorConfig.EditorConfig",
     "dbaeumer.vscode-eslint",
-    "rebornix.Ruby",
-    "webben.browserslist"
+    "rebornix.Ruby"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
