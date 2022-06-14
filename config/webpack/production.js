@@ -72,7 +72,7 @@ module.exports = merge(sharedConfig, {
         ],
       },
       externals: [
-        '/system/beer/beer_emoji.png', // used for emoji picker dropdown
+        '/emoji/1f602.svg', // used for emoji picker dropdown
         '/emoji/sheet_10.png', // used in emoji-mart
       ],
       excludes: [
