@@ -1,0 +1,72 @@
+image: docker:dind
+
+variables:
+  IMAGE_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA
+  CACHE_TAG: $CI_REGISTRY_IMAGE:latest
+  DOCKER_DRIVER: overlay2
+
+include:
+  - template: Security/Dependency-Scanning.gitlab-ci.yml
+  - template: Security/License-Scanning.gitlab-ci.yml
+  - template: Security/SAST.gitlab-ci.yml
+  - template: Security/Secret-Detection.gitlab-ci.yml
+
+before_script:
+  - export IMAGE_NAME=$IMAGE_TAG
+  - export CACHE_TAG=$CACHE_TAG
+
+stages:
+  - build
+  - test
+  - push
+  - cleanup
+
+build:
+  stage: build
+  only:
+    - main
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+  script:
+    - >
+      docker build
+      --pull
+      --cache-from $CACHE_TAG
+      --label "org.opencontainers.image.title=$CI_PROJECT_TITLE"
+      --label "org.opencontainers.image.url=$CI_PROJECT_URL"
+      --label "org.opencontainers.image.created=$CI_JOB_STARTED_AT"
+      --label "org.opencontainers.image.revision=$CI_COMMIT_SHA"
+      --label "org.opencontainers.image.version=$CI_COMMIT_REF_NAME"
+      --tag $IMAGE_TAG .
+
+push image:
+  stage: push
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+  only:
+    - main
+  script:
+    - docker push $IMAGE_TAG
+
+cleanup:
+  stage: cleanup
+  only:
+    - main
+    - tags
+  script:
+    - docker rmi -f "$IMAGE_TAG"
+
+# Finally, the goal here is to Docker tag any Git tag
+# GitLab will start a new pipeline everytime a Git tag is created, which is pretty awesome
+Push tag:
+  variables:
+    GIT_STRATEGY: none
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+  stage: push
+  only:
+    - tags
+  script:
+    - docker pull $IMAGE_TAG
+    - docker tag $IMAGE_TAG $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
+    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
