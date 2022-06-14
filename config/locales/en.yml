@@ -8,8 +8,8 @@ en:
     active_footnote: Monthly Active Users (MAU)
     administered_by: 'Administered by:'
     api: API
-    apps: Mobile apps
-    apps_platforms: Use Mastodon from iOS, Android and other platforms
+    apps: Apps
+    apps_platforms: Use Explore.Beer from iOS, Android and other platforms
     browse_directory: Browse a profile directory and filter by interests
     browse_local_posts: Browse a live stream of public posts from this server
     browse_public_posts: Browse a live stream of public posts on Mastodon
@@ -19,7 +19,7 @@ en:
     continue_to_web: Continue to web app
     discover_users: Discover users
     documentation: Documentation
-    federation_hint_html: With an account on %{instance} you'll be able to follow people on any Mastodon server and beyond.
+    federation_hint_html: With an account on %{instance} you'll be able to follow people on any fediverse server and beyond.
     get_apps: Try a mobile app
     hosted_on: Mastodon hosted on %{domain}
     instance_actor_flash: |
@@ -30,7 +30,7 @@ en:
     logout_before_registering: You are already logged in.
     privacy_policy: Privacy policy
     rules: Server rules
-    rules_html: 'Below is a summary of rules you need to follow if you want to have an account on this server of Mastodon:'
+    rules_html: 'Below is a summary of rules you need to follow if you want to have an account on this server:'
     see_whats_happening: See what's happening
     server_stats: 'Server stats:'
     source_code: Source code
@@ -38,8 +38,8 @@ en:
       one: post
       other: posts
     status_count_before: Who published
-    tagline: Decentralized social network
-    terms: Terms of service
+    tagline: Be responsible, drink good beer, and try everything.
+    terms: Legal
     unavailable_content: Moderated servers
     unavailable_content_description:
       domain: Server
@@ -50,12 +50,12 @@ en:
       silenced_title: Limited servers
       suspended: 'No data from these servers will be processed, stored or exchanged, making any interaction or communication with users from these servers impossible:'
       suspended_title: Suspended servers
-    unavailable_content_html: Mastodon generally allows you to view content from and interact with users from any other server in the fediverse. These are the exceptions that have been made on this particular server.
+    unavailable_content_html: Explore.Beer generally allows you to view content from and interact with users from any other server in the fediverse. These are the exceptions that have been made on this particular server.
     user_count_after:
       one: user
       other: users
     user_count_before: Home to
-    what_is_mastodon: What is Mastodon?
+    what_is_mastodon: What is is this?
   accounts:
     choices_html: "%{name}'s choices:"
     endorsements_hint: You can endorse people you follow from the web interface, and they will show up here.
@@ -948,9 +948,9 @@ en:
     delete_account: Delete account
     delete_account_html: If you wish to delete your account, you can <a href="%{path}">proceed here</a>. You will be asked for confirmation.
     description:
-      prefix_invited_by_user: "@%{name} invites you to join this server of Mastodon!"
-      prefix_sign_up: Sign up on Mastodon today!
-      suffix: With an account, you will be able to follow people, post updates and exchange messages with users from any Mastodon server and more!
+      prefix_invited_by_user: "@%{name} invites you to join Explore.Beer!"
+      prefix_sign_up: Sign up on Explore.Beer today!
+      suffix: With an account, you will be able to follow people, post updates and exchange messages with users from any federated server and more!
     didnt_get_confirmation: Didn't receive confirmation instructions?
     dont_have_your_security_key: Don't have your security key?
     forgot_password: Forgot your password?
@@ -1045,7 +1045,7 @@ en:
   directories:
     directory: Profile directory
     explanation: Discover users based on their interests
-    explore_mastodon: Explore %{title}
+    explore_mastodon: Explore Beer
   disputes:
     strikes:
       action_taken: Action taken
@@ -1092,7 +1092,7 @@ en:
       content: We're sorry, but something went wrong on our end.
       title: This page is not correct
     '503': The page could not be served due to a temporary server failure.
-    noscript_html: To use the Mastodon web application, please enable JavaScript. Alternatively, try one of the <a href="%{apps_path}">native apps</a> for Mastodon for your platform.
+    noscript_html: To use the Explore.Beer web application, please enable JavaScript. Alternatively, try one of the <a href="%{apps_path}">native apps</a> for Mastodon for your platform.
   existing_username_validator:
     not_found: could not find a local user with that username
     not_found_multiple: could not find %{usernames}
@@ -1430,11 +1430,11 @@ en:
     view_authentication_history: View authentication history of your account
   settings:
     account: Account
-    account_settings: Account settings
+    account_settings: Settings
     aliases: Account aliases
     appearance: Appearance
     authorized_apps: Authorized apps
-    back: Back to Mastodon
+    back: Back to Explore.Beer
     delete: Account deletion
     development: Development
     edit_profile: Edit profile
@@ -1564,7 +1564,7 @@ en:
       <p>Any of the information we collect from you may be used in the following ways:</p>
 
       <ul>
-        <li>To provide the core functionality of Mastodon. You can only interact with other people's content and post your own content when you are logged in. For example, you may follow other people to view their combined posts in your own personalized home timeline.</li>
+        <li>To provide the core functionality of Explore.Beer. You can only interact with other people's content and post your own content when you are logged in. For example, you may follow other people to view their combined posts in your own personalized home timeline.</li>
         <li>To aid moderation of the community, for example comparing your IP address with other known ones to determine ban evasion or other violations.</li>
         <li>The email address you provide may be used to send you information, notifications about other people interacting with your content or sending you messages, and to respond to inquiries, and/or other requests or questions.</li>
       </ul>
@@ -1663,7 +1663,7 @@ en:
       subject: Your appeal from %{date} has been rejected
       title: Appeal rejected
     backup_ready:
-      explanation: You requested a full backup of your Mastodon account. It's now ready for download!
+      explanation: You requested a full backup of your Explore.Beer account. It's now ready for download!
       subject: Your archive is ready for download
       title: Archive takeout
     suspicious_sign_in:
@@ -1714,11 +1714,11 @@ en:
       full_handle_hint: This is what you would tell your friends so they can message or follow you from another server.
       review_preferences_action: Change preferences
       review_preferences_step: Make sure to set your preferences, such as which emails you'd like to receive, or what privacy level you’d like your posts to default to. If you don’t have motion sickness, you could choose to enable GIF autoplay.
-      subject: Welcome to Mastodon
-      tip_federated_timeline: The federated timeline is a firehose view of the Mastodon network. But it only includes people your neighbours are subscribed to, so it's not complete.
+      subject: Welcome to Explore.Beer
+      tip_federated_timeline: The federated timeline is a firehose view of the federated network. But it only includes people your neighbours are subscribed to, so it's not complete.
       tip_following: You follow your server's admin(s) by default. To find more interesting people, check the local and federated timelines.
       tip_local_timeline: The local timeline is a firehose view of people on %{instance}. These are your immediate neighbours!
-      tip_mobile_webapp: If your mobile browser offers you to add Mastodon to your homescreen, you can receive push notifications. It acts like a native app in many ways!
+      tip_mobile_webapp: If your mobile browser offers you to add Explore.Beer to your homescreen, you can receive push notifications. It acts like a native app in many ways!
       tips: Tips
       title: Welcome aboard, %{name}!
   users:

@@ -4,7 +4,7 @@ io:
     attributes:
       doorkeeper/application:
         name: Nomo
-        redirect_uri: Ridirektoligilo
+        redirect_uri: Deviacligilo
         scopes: Skopi
         website: Apliksito
     errors:
@@ -55,52 +55,52 @@ io:
         title: 'Apliko: %{name}'
     authorizations:
       buttons:
-        authorize: Yurizar
+        authorize: Permisez
         deny: Despermisez
       error:
         title: Eroro eventis
       new:
-        prompt_html: "%{client_name} volas permiso por acesar vua konti. Ol esas externa softwaro. <strong>Se vu ne fidas, lore vu debas ne yurizar.</strong>"
+        prompt_html: "%{client_name} volas permiso por acesar vua konti. Ol esas externa softwaro. <strong>Se vu ne fidas, lore vu debas ne permisar.</strong>"
         review_permissions: Kontrolez permisi
-        title: Yurizo bezonesas
+        title: Permiso bezonesas
       show:
-        title: Kopiez ca yurizkodexo e glutinez a la apliko.
+        title: Kopiez ca permisnumero e glutinez adsur la apliko.
     authorized_applications:
       buttons:
         revoke: Deaprobez
       confirmations:
         revoke: Ka vu esas certa?
       index:
-        authorized_at: Yurizesis ye %{date}
+        authorized_at: Permisesis ye %{date}
         description_html: Co esas softwari quo povas acesar vua konto per API. Se existas softwari quon vu ne rikonocas hike, o softwari misfuncionas, vu povas desaprobar ola aceso.
         last_used_at: Antee uzesis ye %{date}
         never_used: Nulaloke uzesas
         scopes: Permisi
         superapp: Interna
-        title: Vua yurizita softwari
+        title: Vua permisita softwari
     errors:
       messages:
-        access_denied: Moyenproprietanto o yurizservilo refuzis la demando.
-        credential_flow_not_configured: Moyenproprietantpasvortidentesesofluo faliis pro ke Doorkeeper.configure.resource_owner_from_credentials ne ajustesis.
+        access_denied: Resursproprietanto o permisservilo refuzis la demando.
+        credential_flow_not_configured: Resursproprietantpasvortidentesesofluo faliis pro ke Doorkeeper.configure.resource_owner_from_credentials ne ajustesis.
         invalid_client: Klientpermiso falias pro nesavita kliento, neinkluzita klientpermiso o nesuportita permismetodo.
-        invalid_grant: Provizita yurizo esis nevalida, expiris, deaprobesis, ne parigas uzita ridirektoligilo dum yurizdemando o facesis a altra kliento.
+        invalid_grant: Provizita permiso esis nevalida, expiris, deaprobesis, ne parigas uzita ridirektoligilo dum permisdemando o facesis a altra kliento.
         invalid_redirect_uri: La inkluzita ridirektoligilo esas nevalida.
         invalid_request:
           missing_param: 'Bezonita parametro: %{value}.'
-          request_not_authorized: Demando bezonas yurizesar. Bezonita parametro por yurizar demando ne existas o esas nevalida.
+          request_not_authorized: Demando bezonas permisesar. Bezonita parametro por permisar demando ne existas o esas nevalida.
           unknown: La demando ne havas bezonita parametro, inkluzas nesuportita parametro o malformesas.
-        invalid_resource_owner: Provizita Moyenproprietantidenteso esas nevalida o moyenproprietanto ne existas
+        invalid_resource_owner: Provizita resursproprietantidenteso esas nevalida o resursproprietanto ne existas
         invalid_scope: La demandita skopo esas nevalida, nesavata o malformata.
         invalid_token:
           expired: La acesficho expiris
           revoked: Acesficho deaprobesis
           unknown: Acesficho esas nevalida
-        resource_owner_authenticator_not_configured: Moyenproprietanto falias trovar pro ke Doorkeeper.configure.resource_owner_authenticator ne ajustesis.
-        server_error: Yurizservilo trovas neanticipata situeso quo preventas ol finar la demando.
-        temporarily_unavailable: Yurizservilo nu ne povas direktar la demando pro provizora eceso o servilmanteno.
-        unauthorized_client: La kliento ne yurizesis agar ca demando per ca metodo.
-        unsupported_grant_type: Yurizprovizontipo ne suportesas da yurizservilo.
-        unsupported_response_type: La yurizservilo ne suportas ca responstipo.
+        resource_owner_authenticator_not_configured: Resursproprietanto falias trovar pro ke Doorkeeper.configure.resource_owner_authenticator ne ajustesis.
+        server_error: Permisservilo trovas neanticipata situeso quo preventas ol finar la demando.
+        temporarily_unavailable: Permisservilo nu ne povas direktar la demando pro provizora eceso o servilmanteno.
+        unauthorized_client: La kliento ne permisesis agar ca demando per ca metodo.
+        unsupported_grant_type: Permisprovizontipo ne suportesas da permisservilo.
+        unsupported_response_type: La permisservilo ne suportas ca responsotipo.
     flash:
       applications:
         create:
@@ -111,7 +111,7 @@ io:
           notice: Apliko novigesis.
       authorized_applications:
         destroy:
-          notice: Apliko deaprobesis.
+          notice: Apliko aprobesis.
     grouped_scopes:
       access:
         read: Lekto-nura aceso
@@ -136,7 +136,7 @@ io:
         mutes: Silencigati
         notifications: Avizi
         push: Pulsavizi
-        reports: Raporti
+        reports: Raportigi
         search: Trovez
         statuses: Posti
     layouts:
@@ -145,14 +145,14 @@ io:
           applications: Apliki
           oauth2_provider: Provizanto di OAuth2
       application:
-        title: Yurizo di OAuth bezonesas
+        title: Permiso di OAuth bezonesas
     scopes:
       admin:read: lektez omna informi di la servilo
       admin:read:accounts: lektez privata informo di omna konti
-      admin:read:reports: lektez privata informo di omna raporti e raportizita konti
+      admin:read:reports: lektez privata informo di omna raportigo e raportigita konti
       admin:write: modifikez omna informi di la servilo
       admin:write:accounts: jerez konti
-      admin:write:reports: jerez raporti
+      admin:write:reports: jerez raportigi
       crypto: uzas intersequanta chifro
       follow: follow, block, unblock and unfollow accounts
       push: ganez vua pulsavizi
@@ -178,8 +178,8 @@ io:
       write:filters: kreez filtrili
       write:follows: sequez personi
       write:lists: kreez listi
-      write:media: adchargez mediifaili
+      write:media: chargez medifaili
       write:mutes: silencigez personi e konversi
       write:notifications: efacez vua avizi
-      write:reports: raportizez altra omni
+      write:reports: raportigez altra omni
       write:statuses: publikigez posti
