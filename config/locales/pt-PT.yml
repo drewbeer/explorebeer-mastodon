@@ -1,60 +1,15 @@
 ---
 pt-PT:
   about:
-    about_hashtag_html: Estes são toots públicos marcados com <strong>#%{hashtag}</strong>. Podes interagir com eles se tiveres uma conta Mastodon.
     about_mastodon_html: Mastodon é uma rede social baseada em protocolos abertos da web e software livre e gratuito. É descentralizado como e-mail.
-    about_this: Sobre esta instância
-    active_count_after: activo
-    active_footnote: Utilizadores activos mensais (UAM)
-    administered_by: 'Administrado por:'
     api: API
     apps: Aplicações móveis
-    apps_platforms: Usar o Mastodon a partir do iOS, Android e outras plataformas
-    browse_directory: Navegue pelo directório de perfis e filtre por interesses
-    browse_local_posts: Visualize as publicações públicas desta instância em tempo real
-    browse_public_posts: Visualize as publicações públicas do Mastodon em tempo real
-    contact: Contacto
     contact_missing: Não configurado
     contact_unavailable: n.d.
-    continue_to_web: Continuar para a aplicação web
-    discover_users: Descobrir utilizadores
     documentation: Documentação
-    federation_hint_html: Ter uma conta em %{instance} permitirá seguir pessoas em qualquer instância Mastodon.
-    get_apps: Experimente uma aplicação
     hosted_on: Mastodon em %{domain}
-    instance_actor_flash: |
-      Esta conta é um actor virtual usado para representar a própria instância e não um utilizador individual.
-      É usada para motivos de federação e não deve ser bloqueada a não ser que que queira bloquear a instância por completo. Se for esse o caso, deverá usar o bloqueio de domínio.
-    learn_more: Saber mais
-    logged_in_as_html: Está de momento ligado como %{username}.
-    logout_before_registering: Já tem sessão iniciada.
-    privacy_policy: Política de privacidade
-    rules: Regras da instância
-    rules_html: 'Abaixo está um resumo das regras que precisa seguir se pretender ter uma conta nesta instância do Mastodon:'
-    see_whats_happening: Veja o que está a acontecer
-    server_stats: 'Estatísticas da instância:'
+    privacy_policy: Política de Privacidade
     source_code: Código fonte
-    status_count_after:
-      one: publicação
-      other: publicações
-    status_count_before: Que fizeram
-    tagline: Siga os seus amigos e descubra novas amizades
-    terms: Termos de serviço
-    unavailable_content: Conteúdo indisponível
-    unavailable_content_description:
-      domain: Instância
-      reason: Motivo
-      rejecting_media: 'Arquivos de media destas instâncias não serão processados ou armazenados, e nenhuma miniatura será exibida, o que requer que o utilizador clique e abra o arquivo original manualmente:'
-      rejecting_media_title: Media filtrada
-      silenced: 'Publicações destas instâncias serão ocultas em linhas do tempo e conversas públicas, e nenhuma notificação será gerada a partir das interações dos seus utilizadores, a menos que você os esteja a seguir:'
-      silenced_title: Servidores silenciados
-      suspended: 'Nenhum dado dessas instâncias será processado, armazenado ou trocado, tornando qualquer interação ou comunicação com os utilizadores dessas instâncias impossível:'
-      suspended_title: Servidores suspensos
-    unavailable_content_html: Mastodon geralmente permite que você veja o conteúdo e interaja com utilizadores de qualquer outra instância no fediverso. Estas são as exceções desta instância em específico.
-    user_count_after:
-      one: utilizador
-      other: utilizadores
-    user_count_before: Casa para
     what_is_mastodon: O que é o Mastodon?
   accounts:
     choices_html: 'escolhas de %{name}:'
@@ -83,10 +38,8 @@ pt-PT:
     posts_tab_heading: Publicações
     posts_with_replies: Posts e Respostas
     roles:
-      admin: Administrador(a)
       bot: Robô
       group: Grupo
-      moderator: Moderador
     unavailable: Perfil indisponível
     unfollow: Deixar de seguir
   admin:
@@ -105,12 +58,17 @@ pt-PT:
       avatar: Imagem de Perfil
       by_domain: Domínio
       change_email:
-        changed_msg: E-mail da conta alterado com sucesso!
+        changed_msg: E-mail alterado com sucesso!
         current_email: E-mail atual
         label: Alterar e-mail
         new_email: Novo e-mail
         submit: Alterar e-mail
         title: Alterar e-mail para %{username}
+      change_role:
+        changed_msg: Função alterada com sucesso!
+        label: Alterar função
+        no_role: Nenhuma função
+        title: Alterar a função de %{username}
       confirm: Confirmar
       confirmed: Confirmado
       confirming: A confirmar
@@ -154,6 +112,7 @@ pt-PT:
         active: Activo
         all: Todos
         pending: Pendente
+        silenced: Limitadas
         suspended: Supensos
         title: Moderação
       moderation_notes: Notas de moderação
@@ -161,6 +120,7 @@ pt-PT:
       most_recent_ip: IP mais recente
       no_account_selected: Nenhuma conta foi alterada porque nenhuma foi selecionada
       no_limits_imposed: Sem limites impostos
+      no_role_assigned: Nenhuma função atribuída
       not_subscribed: Não inscrito
       pending: Pendente de revisão
       perform_full_suspension: Fazer suspensão completa
@@ -187,12 +147,7 @@ pt-PT:
       reset: Restaurar
       reset_password: Reset palavra-passe
       resubscribe: Reinscrever
-      role: Permissões
-      roles:
-        admin: Administrador(a)
-        moderator: Moderador
-        staff: Equipa
-        user: Utilizador
+      role: Função
       search: Pesquisar
       search_same_email_domain: Outros utilizadores com o mesmo domínio de e-mail
       search_same_ip: Outros utilizadores com o mesmo IP
@@ -235,17 +190,21 @@ pt-PT:
         approve_user: Aprovar Utilizador
         assigned_to_self_report: Atribuir Denúncia
         change_email_user: Alterar E-mail do Utilizador
+        change_role_user: Alterar Função do Utilizador
         confirm_user: Confirmar Utilizador
         create_account_warning: Criar Aviso
         create_announcement: Criar Anúncio
+        create_canonical_email_block: Criar Bloqueio de E-mail
         create_custom_emoji: Criar Emoji Personalizado
         create_domain_allow: Criar Permissão de Domínio
         create_domain_block: Criar Bloqueio de Domínio
         create_email_domain_block: Criar Bloqueio de Domínio de E-mail
         create_ip_block: Criar regra de IP
         create_unavailable_domain: Criar Domínio Indisponível
+        create_user_role: Criar Função
         demote_user: Despromover Utilizador
         destroy_announcement: Eliminar Anúncio
+        destroy_canonical_email_block: Eliminar Bloqueio de E-mail
         destroy_custom_emoji: Eliminar Emoji Personalizado
         destroy_domain_allow: Eliminar Permissão de Domínio
         destroy_domain_block: Eliminar Bloqueio de Domínio
@@ -254,6 +213,7 @@ pt-PT:
         destroy_ip_block: Eliminar regra de IP
         destroy_status: Eliminar Publicação
         destroy_unavailable_domain: Eliminar Domínio Indisponível
+        destroy_user_role: Eliminar Função
         disable_2fa_user: Desativar 2FA
         disable_custom_emoji: Desativar Emoji Personalizado
         disable_sign_in_token_auth_user: Desativar token de autenticação por e-mail para Utilizador
@@ -280,24 +240,30 @@ pt-PT:
         update_announcement: Atualizar Anúncio
         update_custom_emoji: Atualizar Emoji Personalizado
         update_domain_block: Atualizar Bloqueio de Domínio
+        update_ip_block: Atualizar regra de IP
         update_status: Atualizar Estado
+        update_user_role: Atualizar Função
       actions:
         approve_appeal_html: "%{name} aprovou recurso da decisão de moderação de %{target}"
         approve_user_html: "%{name} aprovou a inscrição de %{target}"
         assigned_to_self_report_html: "%{name} atribuiu a denúncia %{target} a si próprio"
         change_email_user_html: "%{name} alterou o endereço de e-mail do utilizador %{target}"
+        change_role_user_html: "%{name} alterou a função de %{target}"
         confirm_user_html: "%{name} confirmou o endereço de e-mail do utilizador %{target}"
         create_account_warning_html: "%{name} enviou um aviso para %{target}"
         create_announcement_html: "%{name} criou o novo anúncio %{target}"
+        create_canonical_email_block_html: "%{name} bloqueou o e-mail com a hash %{target}"
         create_custom_emoji_html: "%{name} carregou o novo emoji %{target}"
         create_domain_allow_html: "%{name} habilitou a federação com o domínio %{target}"
         create_domain_block_html: "%{name} bloqueou o domínio %{target}"
         create_email_domain_block_html: "%{name} bloqueou o domínio de e-mail %{target}"
         create_ip_block_html: "%{name} criou regra para o IP %{target}"
         create_unavailable_domain_html: "%{name} parou a entrega ao domínio %{target}"
+        create_user_role_html: "%{name} criou a função %{target}"
         demote_user_html: "%{name} despromoveu o utilizador %{target}"
         destroy_announcement_html: "%{name} eliminou o anúncio %{target}"
-        destroy_custom_emoji_html: "%{name} destruiu o emoji %{target}"
+        destroy_canonical_email_block_html: "%{name} desbloqueou o e-mail com a hash %{target}"
+        destroy_custom_emoji_html: "%{name} eliminou o emoji %{target}"
         destroy_domain_allow_html: "%{name} desabilitou a federação com o domínio %{target}"
         destroy_domain_block_html: "%{name} desbloqueou o domínio %{target}"
         destroy_email_domain_block_html: "%{name} desbloqueou o domínio de e-mail %{target}"
@@ -305,6 +271,7 @@ pt-PT:
         destroy_ip_block_html: "%{name} eliminou regra para o IP %{target}"
         destroy_status_html: "%{name} removeu a publicação de %{target}"
         destroy_unavailable_domain_html: "%{name} retomou a entrega ao domínio %{target}"
+        destroy_user_role_html: "%{name} eliminou a função %{target}"
         disable_2fa_user_html: "%{name} desativou o requerimento de autenticação em dois passos para o utilizador %{target}"
         disable_custom_emoji_html: "%{name} desabilitou o emoji %{target}"
         disable_sign_in_token_auth_user_html: "%{name} desativou token de autenticação por e-mail para %{target}"
@@ -331,8 +298,9 @@ pt-PT:
         update_announcement_html: "%{name} atualizou o anúncio %{target}"
         update_custom_emoji_html: "%{name} atualizou o emoji %{target}"
         update_domain_block_html: "%{name} atualizou o bloqueio de domínio para %{target}"
+        update_ip_block_html: "%{name} alterou regra para IP %{target}"
         update_status_html: "%{name} atualizou o estado de %{target}"
-      deleted_status: "(publicação eliminada)"
+        update_user_role_html: "%{name} alterou a função %{target}"
       empty: Não foram encontrados registos.
       filter_by_action: Filtrar por ação
       filter_by_user: Filtrar por utilizador
@@ -649,6 +617,67 @@ pt-PT:
       unresolved: Por resolver
       updated_at: Atualizado
       view_profile: Ver perfil
+    roles:
+      add_new: Adicionar função
+      assigned_users:
+        one: "%{count} utilizador"
+        other: "%{count} utilizadores"
+      categories:
+        administration: Administração
+        devops: DevOps
+        invites: Convites
+        moderation: Moderação
+        special: Especiais
+      delete: Eliminar
+      description_html: Com as <strong>funções de utilizador</strong>, pode personalizar quais funções e áreas do Mastodon os seus utilizadores podem aceder.
+      edit: Editar função '%{name}'
+      everyone: Permissões padrão
+      everyone_full_description_html: Esta é a <strong>função base</strong> que afeta <strong>todos os utilizadores</strong>, mesmo aqueles sem uma função atribuída. Todas as outras funções herdam as permissões desta.
+      permissions_count:
+        one: "%{count} permissão"
+        other: "%{count} permissões"
+      privileges:
+        administrator: Administrador
+        administrator_description: Utilizadores com esta permissão irão contornar todas as permissões
+        delete_user_data: Eliminar Dados de Utilizador
+        delete_user_data_description: Permite que os utilizadores eliminem os dados de outros utilizadores sem atraso
+        invite_users: Convidar Utilizadores
+        invite_users_description: Permite aos utilizadores convidar pessoas novas para o servidor
+        manage_announcements: Gerir Anúncios
+        manage_announcements_description: Permite aos utilizadores gerir anúncios no servidor
+        manage_appeals: Gerir Recursos
+        manage_appeals_description: Permite aos utilizadores rever recursos de moderação
+        manage_blocks: Gerir Bloqueios
+        manage_blocks_description: Permite aos utilizadores bloquear provedores de e-mail e endereços IP
+        manage_custom_emojis: Gerir Emojis Personalizados
+        manage_custom_emojis_description: Permite aos utilizadores gerir os emojis personalizados do servidor
+        manage_federation: Gerir Federação
+        manage_federation_description: Permite aos utilizadores bloquear ou permitir federação com outros domínios e controlar a entregabilidade
+        manage_invites: Gerir Convites
+        manage_invites_description: Permite aos utilizadores pesquisar e desativar links de convite
+        manage_reports: Gerir Relatórios
+        manage_reports_description: Permite aos utilizadores rever relatórios e executar ações de moderação contra eles
+        manage_roles: Gerir Funções
+        manage_roles_description: Permite aos usuários gerir e atribuir funções abaixo das deles
+        manage_rules: Gerir Regras
+        manage_rules_description: Permite aos utilizadores alterar as regras do servidor
+        manage_settings: Gerir Configurações
+        manage_settings_description: Permite aos utilizadores alterar as configurações do site
+        manage_taxonomies: Gerir Taxonomias
+        manage_taxonomies_description: Permite aos utilizadores rever o conteúdo em tendência e atualizar as configurações de hashtag
+        manage_user_access: Gerir Acesso de Utilizador
+        manage_user_access_description: Permite aos utilizadores desativar a autenticação em duas etapas de outros utilizadores, alterar o seu endereço de e-mail e redefinir a sua palavra-passe
+        manage_users: Gerir Utilizadores
+        manage_users_description: Permite aos utilizadores ver os detalhes de outros utilizadores e executar ações de moderação contra eles
+        manage_webhooks: Gerir Webhooks
+        manage_webhooks_description: Permite aos utilizadores configurar webhooks para eventos administrativos
+        view_audit_log: Ver Registo de Auditoria
+        view_audit_log_description: Permite aos utilizadores ver um histórico de ações administrativas no servidor
+        view_dashboard: Ver Painel de Controlo
+        view_dashboard_description: Permite aos utilizadores aceder ao painel de controlo e várias métricas
+        view_devops: DevOps
+        view_devops_description: Permite aos utilizadores aceder aos painéis de controlo do Sidekiq e pgHero
+      title: Funções
     rules:
       add_new: Adicionar regra
       delete: Eliminar
@@ -679,9 +708,6 @@ pt-PT:
         users: Para utilizadores locais que se encontrem autenticados
       domain_blocks_rationale:
         title: Mostrar motivo
-      hero:
-        desc_html: Apresentado na primeira página. Pelo menos 600x100px recomendados. Quando não é definido, é apresentada a miniatura da instância
-        title: Imagem Hero
       mascot:
         desc_html: Apresentada em múltiplas páginas. Pelo menos 293x205px recomendados. Quando não é definida, é apresentada a mascote predefinida
         title: Imagem da mascote
@@ -698,12 +724,6 @@ pt-PT:
         closed_message:
           desc_html: Mostrar na página inicial quando registos estão encerrados<br/>Podes usar tags HTML
           title: Mensagem de registos encerrados
-        deletion:
-          desc_html: Permitir a qualquer utilizador eliminar a sua conta
-          title: Permitir eliminar contas
-        min_invite_role:
-          disabled: Ninguém
-          title: Permitir convites de
         require_invite_text:
           desc_html: Quando os registos exigirem aprovação manual, faça o texto "Porque se quer juntar a nós?" da solicitação de convite obrigatório, em vez de opcional
           title: Exigir que novos utilizadores preencham um texto de solicitação de convite
@@ -713,12 +733,6 @@ pt-PT:
           none: Ninguém se pode registar
           open: Qualquer pessoa se pode registar
         title: Modo de registo
-      show_known_fediverse_at_about_page:
-        desc_html: Quando comutado, irá mostrar a previsualização de publicações de todo o fediverse conhecido. De outro modo só mostrará publicações locais.
-        title: Mostrar o fediverse conhecido na previsualização da cronologia
-      show_staff_badge:
-        desc_html: Mostrar um crachá da equipa na página de utilizador
-        title: Mostrar crachá da equipa
       site_description:
         desc_html: Mostrar como parágrafo na página inicial e usado como meta tag.Podes usar tags HTML, em particular <code>&lt;a&gt;</code> e <code>&lt;em&gt;</code>.
         title: Descrição do site
@@ -729,8 +743,8 @@ pt-PT:
         desc_html: Mostrada na barra lateral e em etiquetas de metadados. Descreve o que o Mastodon é e o que torna esta instância especial num único parágrafo. Se deixada em branco, remete para a descrição da instância.
         title: Breve descrição da instância
       site_terms:
-        desc_html: Podes escrever a sua própria política de privacidade, termos de serviço, entre outras coisas. Pode utilizar etiquetas HTML
-        title: Termos de serviço personalizados
+        desc_html: Pode escrever a sua própria política de privacidade. Pode utilizar código HTML
+        title: Política de privacidade personalizada
       site_title: Título do site
       thumbnail:
         desc_html: Usada para visualizações via OpenGraph e API. Recomenda-se 1200x630px
@@ -740,8 +754,8 @@ pt-PT:
         title: Visualização da linha temporal
       title: Configurações do site
       trendable_by_default:
-        desc_html: Afecta as hashtags que ainda não tenham sido proibidas
-        title: Permitir hashtags em tendência sem revisão prévia
+        desc_html: Conteúdo específico em tendência pode mesmo assim ser explicitamente rejeitado
+        title: Permitir tendências sem revisão prévia
       trends:
         desc_html: Exibir publicamente hashtags atualmente em destaque que já tenham sido revistas anteriormente
         title: Hashtags em destaque
@@ -852,6 +866,26 @@ pt-PT:
       edit_preset: Editar o aviso predefinido
       empty: Ainda não definiu nenhum aviso predefinido.
       title: Gerir os avisos predefinidos
+    webhooks:
+      add_new: Adicionar endpoint
+      delete: Eliminar
+      description_html: Um <strong>webhook</strong> possibilita que o Mastodon envie <strong>notificações em tempo real</strong> de eventos seleccionados, para um seu aplicativo, para que este possa <strong>acionar ações automaticamente</strong>.
+      disable: Desativar
+      disabled: Desativado
+      edit: Editar endpoint
+      empty: Não tem ainda qualquer endpoint de webhook configurado.
+      enable: Ativar
+      enabled: Activo
+      enabled_events:
+        one: 1 evento ativado
+        other: "%{count} eventos ativados"
+      events: Eventos
+      new: Novo webhook
+      rotate_secret: Alternar segredo
+      secret: Segredo de assinatura
+      status: Estado
+      title: Webhooks
+      webhook: Webhook
   admin_mailer:
     new_appeal:
       actions:
@@ -875,12 +909,8 @@ pt-PT:
     new_trends:
       body: 'Os seguintes itens precisam ser revistos antes de poderem ser exibidos publicamente:'
       new_trending_links:
-        no_approved_links: Não existem, atualmente, links aprovados em destaque.
-        requirements: 'Qualquer um destes candidatos pode ultrapassar o #%{rank} link aprovado em destaque, que é atualmente "%{lowest_link_title}" com uma pontuação de %{lowest_link_score}.'
         title: Links em destaque
       new_trending_statuses:
-        no_approved_statuses: Não existem, atualmente, publicações aprovadas em destaque.
-        requirements: 'Qualquer um destes candidatos pode ultrapassar a #%{rank} publicação aprovada em destaque, que é atualmente %{lowest_status_url} com uma pontuação de %{lowest_status_score}.'
         title: Publicações em destaque
       new_trending_tags:
         no_approved_tags: Não existem, atualmente, hashtags aprovadas em destaque.
@@ -916,16 +946,13 @@ pt-PT:
   applications:
     created: Aplicação criada com sucesso
     destroyed: Aplicação eliminada com sucesso
-    invalid_url: O URL é inválido
     regenerate_token: Regenerar token de acesso
     token_regenerated: Token de acesso regenerado com sucesso
     warning: Cuidado com estes dados. Não partilhar com ninguém!
     your_token: O teu token de acesso
   auth:
-    apply_for_account: Solicitar um convite
+    apply_for_account: Juntar-se à lista de espera
     change_password: Palavra-passe
-    checkbox_agreement_html: Concordo com as <a href="%{rules_path}" target="_blank">regras da instância</a> e com os <a href="%{terms_path}" target="_blank">termos de serviço</a>
-    checkbox_agreement_without_rules_html: Concordo com os <a href="%{terms_path}" target="_blank">termos do serviço</a>
     delete_account: Eliminar conta
     delete_account_html: Se deseja eliminar a sua conta, pode <a href="%{path}">continuar aqui</a>. Uma confirmação será solicitada.
     description:
@@ -944,6 +971,7 @@ pt-PT:
     migrate_account: Mudar para uma conta diferente
     migrate_account_html: Se deseja redirecionar esta conta para uma outra pode <a href="%{path}">configurar isso aqui</a>.
     or_log_in_with: Ou iniciar sessão com
+    privacy_policy_agreement_html: Eu li e concordo com a <a href="%{privacy_policy_path}" target="_blank">política de privacidade</a>
     providers:
       cas: CAS
       saml: SAML
@@ -951,12 +979,18 @@ pt-PT:
     registration_closed: "%{instance} não está a aceitar novos membros"
     resend_confirmation: Reenviar instruções de confirmação
     reset_password: Criar nova palavra-passe
+    rules:
+      preamble: Estas são definidos e aplicadas pelos moderadores de %{domain}.
+      title: Algumas regras básicas.
     security: Alterar palavra-passe
     set_new_password: Editar palavra-passe
     setup:
       email_below_hint_html: Se o endereço de e-mail abaixo estiver incorreto, pode alterá-lo aqui e receber um novo e-mail de confirmação.
       email_settings_hint_html: O e-mail de confirmação foi enviado para %{email}. Se esse endereço de e-mail não estiver correto, pode alterá-lo nas definições da conta.
       title: Configuração
+    sign_up:
+      preamble: Com uma conta neste servidor Mastodon, poderá seguir qualquer outra pessoa na rede, independentemente do servidor onde a conta esteja hospedada.
+      title: Vamos lá inscrevê-lo em %{domain}.
     status:
       account_status: Estado da conta
       confirming: A aguardar que conclua a confirmação do e-mail.
@@ -965,7 +999,6 @@ pt-PT:
       redirecting_to: A sua conta está inativa porque está atualmente a ser redirecionada para %{acct}.
       view_strikes: Veja as punições anteriores contra a sua conta
     too_fast: Formulário enviado muito rapidamente, tente novamente.
-    trouble_logging_in: Problemas em iniciar sessão?
     use_security_key: Usar chave de segurança
   authorize_follow:
     already_following: Tu já estás a seguir esta conta
@@ -1023,10 +1056,6 @@ pt-PT:
       more_details_html: Para mais detalhes, leia a <a href="%{terms_path}">política de privacidade</a>.
       username_available: O seu nome de utilizador ficará novamente disponível
       username_unavailable: O seu nome de utilizador permanecerá indisponível
-  directories:
-    directory: Dirétorio de perfil
-    explanation: Descobre utilizadores com base nos seus interesses
-    explore_mastodon: Explorar %{title}
   disputes:
     strikes:
       action_taken: Ação tomada
@@ -1105,16 +1134,40 @@ pt-PT:
       public: Cronologias públicas
       thread: Conversações
     edit:
+      add_keyword: Adicionar palavra-chave
+      keywords: Palavras-chave
+      statuses: Publicações individuais
+      statuses_hint_html: Este filtro aplica-se a publicações individuais selecionadas independentemente de estas corresponderem às palavras-chave abaixo. <a href="%{path}">Reveja ou remova publicações do filtro</a>.
       title: Editar filtros
     errors:
+      deprecated_api_multiple_keywords: Estes parâmetros não podem ser alterados a partir deste aplicativo porque se aplicam a mais de um filtro de palavra-chave. Use um aplicativo mais recente ou a interface web.
       invalid_context: Inválido ou nenhum contexto fornecido
-      invalid_irreversible: Filtragem irreversível só funciona no contexto das notificações ou do início
     index:
+      contexts: Filtros em %{contexts}
       delete: Eliminar
       empty: Não tem filtros.
+      expires_in: Expira em %{distance}
+      expires_on: Expira em %{date}
+      keywords:
+        one: "%{count} palavra-chave"
+        other: "%{count} palavras-chaves"
+      statuses:
+        one: "%{count} publicação"
+        other: "%{count} publicações"
+      statuses_long:
+        one: "%{count} publicação individual ocultada"
+        other: "%{count} publicações individuais ocultadas"
       title: Filtros
     new:
+      save: Salvar novo filtro
       title: Adicionar novo filtro
+    statuses:
+      back_to_filter: Voltar ao filtro
+      batch:
+        remove: Remover do filtro
+      index:
+        hint: Este filtro aplica-se a publicações individuais selecionadas independentemente de outros critérios. Pode adicionar mais publicações a este filtro através da interface web.
+        title: Publicações filtradas
   footer:
     developers: Responsáveis pelo desenvolvimento
     more: Mais…
@@ -1122,12 +1175,22 @@ pt-PT:
     trending_now: Tendências atuais
   generic:
     all: Tudo
+    all_items_on_page_selected_html:
+      one: "<strong>%{count}</strong> item nesta página está selecionado."
+      other: Todo os <strong>%{count}</strong> items nesta página estão selecionados.
+    all_matching_items_selected_html:
+      one: "<strong>%{count}</strong> item que corresponde à sua pesquisa está selecionado."
+      other: Todos os <strong>%{count}</strong> items que correspondem à sua pesquisa estão selecionados.
     changes_saved_msg: Alterações guardadas!
     copy: Copiar
     delete: Eliminar
+    deselect: Desmarcar todos
     none: Nenhum
     order_by: Ordenar por
     save_changes: Guardar alterações
+    select_all_matching_items:
+      one: Selecione %{count} item que corresponde à sua pesquisa.
+      other: Selecione todos os %{count} items que correspondem à sua pesquisa.
     today: hoje
     validation_errors:
       one: Algo não está correcto. Por favor vê o erro abaixo
@@ -1232,19 +1295,10 @@ pt-PT:
     copy_account_note_text: 'Este utilizador migrou de %{acct}, aqui estão as suas notas anteriores sobre ele:'
   notification_mailer:
     admin:
+      report:
+        subject: "%{name} submeteu uma denúncia"
       sign_up:
         subject: "%{name} inscreveu-se"
-    digest:
-      action: Ver todas as notificações
-      body: Aqui tens um breve resumo do que perdeste desde o último acesso a %{since}
-      mention: "%{name} mencionou-te em:"
-      new_followers_summary:
-        one: Tens um novo seguidor! Boa!
-        other: Tens %{count} novos seguidores! Fantástico!
-      subject:
-        one: "1 nova notificação desde o seu último acesso 🐘"
-        other: "%{count} novas notificações desde o seu último acesso 🐘"
-      title: Enquanto estiveste ausente…
     favourite:
       body: 'O teu post foi adicionado aos favoritos por %{name}:'
       subject: "%{name} adicionou o teu post aos favoritos"
@@ -1316,6 +1370,8 @@ pt-PT:
     other: Outro
     posting_defaults: Padrões de publicação
     public_timelines: Cronologias públicas
+  privacy_policy:
+    title: Política de Privacidade
   reactions:
     errors:
       limit_reached: Limite de reações diferentes atingido
@@ -1525,8 +1581,6 @@ pt-PT:
       too_late: É tarde demais para apelar desta punição
   tags:
     does_not_match_previous_name: não coincide com o nome anterior
-  terms:
-    title: "%{instance} Termos de Serviço e Política de Privacidade"
   themes:
     contrast: Mastodon (Elevado contraste)
     default: Mastodon
@@ -1605,20 +1659,13 @@ pt-PT:
         suspend: Conta suspensa
     welcome:
       edit_profile_action: Configurar o perfil
-      edit_profile_step: Pode personalizar o seu perfil carregando uma imagem de perfil e de cabeçalho ou alterando o nome a exibir, entre outras opções. Se preferir rever os novos seguidores antes de estes o poderem seguir, pode tornar a sua conta privada.
+      edit_profile_step: Pode personalizar o seu perfil carregando uma imagem de perfil, alterando o nome a exibir, entre outras opções. Pode optar por rever os novos seguidores antes de estes o poderem seguir.
       explanation: Aqui estão algumas dicas para começar
       final_action: Começar a publicar
-      final_step: 'Começa a publicar! Mesmo sem seguidores, as suas mensagens públicas podem ser vistas por outros, por exemplo, na cronologia local e em hashtags. Pode querer apresentar-se utilizando a hashtag #introduções ou #introductions.'
+      final_step: 'Comece a publicar! Mesmo sem seguidores, as suas mensagens públicas podem ser vistas por outros, por exemplo, na cronologia local e em hashtags. Pode querer apresentar-se utilizando a hashtag #introduções ou #introductions.'
       full_handle: O seu nome completo
       full_handle_hint: Isto é o que tem de facultar aos seus amigos para que eles lhe possam enviar mensagens ou seguir a partir de outra instância.
-      review_preferences_action: Alterar preferências
-      review_preferences_step: Certifique-se de configurar as suas preferências, tais como os e-mails que gostaria de receber ou o nível de privacidade que deseja que as suas publicações tenham por defeito. Se não sofre de enjoo de movimento, pode ativar a opção de auto-iniciar GIFs.
       subject: Bem-vindo ao Mastodon
-      tip_federated_timeline: A cronologia federativa é uma visão global da rede Mastodon. Mas só inclui pessoas que os teus vizinhos subscrevem, por isso não é uma visão completa.
-      tip_following: Segues o(s) administrador(es) do teu servidor por defeito. Para encontrar mais pessoas interessantes, procura nas cronologias local e federada.
-      tip_local_timeline: A cronologia local é uma visão global das pessoas em %{instance}. Estes são os seus vizinhos mais próximos!
-      tip_mobile_webapp: Se o teu navegador móvel te oferecer a possibilidade de adicionar o Mastodon ao teu homescreen, tu podes receber notificações push. Ele age como uma aplicação nativa de vários modos!
-      tips: Dicas
       title: Bem-vindo a bordo, %{name}!
   users:
     follow_limit_reached: Não podes seguir mais do que %{limit} pessoas

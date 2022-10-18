@@ -28,7 +28,7 @@ module Mastodon
       changed since the last run.
 
       Even if creating or upgrading indices is not necessary, data from the
-      database will be imported into the indices.
+      database will be imported into the indices, unless overridden with --no-import.
     LONG_DESC
     def deploy
       if options[:concurrency] < 1

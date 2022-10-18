@@ -1,61 +1,16 @@
 ---
 en:
   about:
-    about_hashtag_html: These are public posts tagged with <strong>#%{hashtag}</strong>. You can interact with them if you have an account anywhere in the fediverse.
-    about_mastodon_html: 'The social network of the future: No ads, no corporate surveillance, ethical design, and decentralization! Own your data with Mastodon!'
-    about_this: About
-    active_count_after: active
-    active_footnote: Monthly Active Users (MAU)
-    administered_by: 'Administered by:'
+    about_mastodon_html: Mastodonは、オープンなウェブプロトコルを採用した、自由でオープンソースなソーシャルネットワークです。電子メールのような分散型の仕組みを採っています。
     api: API
-    apps: Mobile apps
-    apps_platforms: Use Explore.Beer from iOS, Android and other platforms
-    browse_directory: Browse a profile directory and filter by interests
-    browse_local_posts: Browse a live stream of public posts from this server
-    browse_public_posts: Browse a live stream of public posts on Mastodon
-    contact: Contact
-    contact_missing: Not set
+    apps: アプリ
+    contact_missing: 未設定
     contact_unavailable: N/A
-    continue_to_web: Continue to web app
-    discover_users: Discover users
-    documentation: Documentation
-    federation_hint_html: With an account on %{instance} you'll be able to follow people on any fediverse server and beyond.
-    get_apps: Try a mobile app
+    documentation: ドキュメント
     hosted_on: Mastodon hosted on %{domain}
-    instance_actor_flash: |
-      This account is a virtual actor used to represent the server itself and not any individual user.
-      It is used for federation purposes and should not be blocked unless you want to block the whole instance, in which case you should use a domain block.
-    learn_more: Learn more
-    logged_in_as_html: You are currently logged in as %{username}.
-    logout_before_registering: You are already logged in.
-    privacy_policy: Privacy policy
-    rules: Server rules
-    rules_html: 'Below is a summary of rules you need to follow if you want to have an account on this server:'
-    see_whats_happening: See what's happening
-    server_stats: 'Server stats:'
-    source_code: Source code
-    status_count_after:
-      one: post
-      other: posts
-    status_count_before: Who published
-    tagline: Be responsible, drink good beer, and try everything.
-    terms: Terms of service
-    unavailable_content: Moderated servers
-    unavailable_content_description:
-      domain: Server
-      reason: Reason
-      rejecting_media: 'Media files from these servers will not be processed or stored, and no thumbnails will be displayed, requiring manual click-through to the original file:'
-      rejecting_media_title: Filtered media
-      silenced: 'Posts from these servers will be hidden in public timelines and conversations, and no notifications will be generated from their users interactions, unless you are following them:'
-      silenced_title: Limited servers
-      suspended: 'No data from these servers will be processed, stored or exchanged, making any interaction or communication with users from these servers impossible:'
-      suspended_title: Suspended servers
-    unavailable_content_html: Explore.Beer generally allows you to view content from and interact with users from any other server in the fediverse. These are the exceptions that have been made on this particular server.
-    user_count_after:
-      one: user
-      other: users
-    user_count_before: Home to
-    what_is_mastodon: What is is this?
+    privacy_policy: プライバシーポリシー
+    source_code: ソースコード
+    what_is_mastodon: Mastodonとは？
   accounts:
     choices_html: "%{name}'s choices:"
     endorsements_hint: You can endorse people you follow from the web interface, and they will show up here.
@@ -83,12 +38,10 @@ en:
     posts_tab_heading: Posts
     posts_with_replies: Posts and replies
     roles:
-      admin: Admin
       bot: Bot
       group: Group
-      moderator: Mod
-    unavailable: Profile unavailable
-    unfollow: Unfollow
+    unavailable: プロフィールは利用できません
+    unfollow: フォロー解除
   admin:
     account_actions:
       action: Perform action
@@ -105,36 +58,41 @@ en:
       avatar: Avatar
       by_domain: Domain
       change_email:
-        changed_msg: Account email successfully changed!
-        current_email: Current email
-        label: Change email
-        new_email: New email
-        submit: Change email
-        title: Change email for %{username}
-      confirm: Confirm
-      confirmed: Confirmed
-      confirming: Confirming
-      custom: Custom
-      delete: Delete data
-      deleted: Deleted
-      demote: Demote
-      destroyed_msg: "%{username}'s data is now queued to be deleted imminently"
-      disable: Freeze
-      disable_sign_in_token_auth: Disable e-mail token authentication
-      disable_two_factor_authentication: Disable 2FA
-      disabled: Frozen
-      display_name: Display name
-      domain: Domain
-      edit: Edit
-      email: Email
-      email_status: Email status
-      enable: Unfreeze
-      enable_sign_in_token_auth: Enable e-mail token authentication
-      enabled: Enabled
-      enabled_msg: Successfully unfroze %{username}'s account
-      followers: Followers
-      follows: Follows
-      header: Header
+        changed_msg: メールアドレスを変更しました!
+        current_email: 現在のメールアドレス
+        label: メールアドレスを変更
+        new_email: 新しいメールアドレス
+        submit: メールアドレスの変更
+        title: "%{username}さんのメールアドレスを変更"
+      change_role:
+        changed_msg: ロールを変更しました!
+        label: ロールを変更
+        no_role: ロールがありません
+        title: "%{username}さんのロールを変更"
+      confirm: 確認
+      confirmed: 確認済み
+      confirming: 確認中
+      custom: カスタム
+      delete: データを削除する
+      deleted: 削除済み
+      demote: 降格
+      destroyed_msg: "%{username}さんのデータは完全に削除されるよう登録されました"
+      disable: 無効化
+      disable_sign_in_token_auth: メールトークン認証を無効にする
+      disable_two_factor_authentication: 二要素認証を無効にする
+      disabled: 無効
+      display_name: 表示名
+      domain: ドメイン
+      edit: 編集
+      email: メールアドレス
+      email_status: メールアドレスの状態
+      enable: 有効化
+      enable_sign_in_token_auth: メールトークン認証を有効にする
+      enabled: 有効
+      enabled_msg: "%{username}の無効化を解除しました"
+      followers: フォロワー数
+      follows: フォロー数
+      header: ヘッダー
       inbox_url: Inbox URL
       invite_request_text: Reasons for joining
       invited_by: Invited by
@@ -151,20 +109,22 @@ en:
       memorialized: Memorialized
       memorialized_msg: Successfully turned %{username} into a memorial account
       moderation:
-        active: Active
-        all: All
-        pending: Pending
-        suspended: Suspended
-        title: Moderation
-      moderation_notes: Moderation notes
-      most_recent_activity: Most recent activity
-      most_recent_ip: Most recent IP
-      no_account_selected: No accounts were changed as none were selected
-      no_limits_imposed: No limits imposed
-      not_subscribed: Not subscribed
-      pending: Pending review
-      perform_full_suspension: Suspend
-      previous_strikes: Previous strikes
+        active: アクティブ
+        all: すべて
+        pending: 承認待ち
+        silenced: 制限
+        suspended: 停止済み
+        title: モデレーション
+      moderation_notes: モデレーションメモ
+      most_recent_activity: 直近の活動
+      most_recent_ip: 直近のIP
+      no_account_selected: 何も選択されていないため、変更されていません
+      no_limits_imposed: 制限なし
+      no_role_assigned: ロールが割り当てられていません
+      not_subscribed: 購読していない
+      pending: 承認待ち
+      perform_full_suspension: 活動を完全に停止させる
+      previous_strikes: 以前のストライク
       previous_strikes_description_html:
         one: This account has <strong>one</strong> strike.
         other: This account has <strong>%{count}</strong> strikes.
@@ -181,21 +141,16 @@ en:
       removed_avatar_msg: Successfully removed %{username}'s avatar image
       removed_header_msg: Successfully removed %{username}'s header image
       resend_confirmation:
-        already_confirmed: This user is already confirmed
-        send: Resend confirmation email
-        success: Confirmation email successfully sent!
-      reset: Reset
-      reset_password: Reset password
-      resubscribe: Resubscribe
-      role: Permissions
-      roles:
-        admin: Administrator
-        moderator: Moderator
-        staff: Staff
-        user: User
-      search: Search
-      search_same_email_domain: Other users with the same e-mail domain
-      search_same_ip: Other users with the same IP
+        already_confirmed: メールアドレスは確認済みです
+        send: 確認メールを再送
+        success: 確認メールを再送信しました!
+      reset: リセット
+      reset_password: パスワード再設定
+      resubscribe: 再講読
+      role: ロール
+      search: 検索
+      search_same_email_domain: 同じドメインのメールアドレスを使用しているユーザー
+      search_same_ip: 同じIPのユーザーを検索
       security_measures:
         only_password: Only password
         password_and_2fa: Password and 2FA
@@ -231,112 +186,122 @@ en:
       whitelisted: Allowed for federation
     action_logs:
       action_types:
-        approve_appeal: Approve Appeal
-        approve_user: Approve User
-        assigned_to_self_report: Assign Report
-        change_email_user: Change E-mail for User
-        confirm_user: Confirm User
-        create_account_warning: Create Warning
-        create_announcement: Create Announcement
-        create_custom_emoji: Create Custom Emoji
-        create_domain_allow: Create Domain Allow
-        create_domain_block: Create Domain Block
-        create_email_domain_block: Create E-mail Domain Block
-        create_ip_block: Create IP rule
-        create_unavailable_domain: Create Unavailable Domain
-        demote_user: Demote User
-        destroy_announcement: Delete Announcement
-        destroy_custom_emoji: Delete Custom Emoji
-        destroy_domain_allow: Delete Domain Allow
-        destroy_domain_block: Delete Domain Block
-        destroy_email_domain_block: Delete E-mail Domain Block
-        destroy_instance: Purge Domain
-        destroy_ip_block: Delete IP rule
-        destroy_status: Delete Post
-        destroy_unavailable_domain: Delete Unavailable Domain
-        disable_2fa_user: Disable 2FA
-        disable_custom_emoji: Disable Custom Emoji
-        disable_sign_in_token_auth_user: Disable E-mail Token Authentication for User
-        disable_user: Disable User
-        enable_custom_emoji: Enable Custom Emoji
-        enable_sign_in_token_auth_user: Enable E-mail Token Authentication for User
-        enable_user: Enable User
-        memorialize_account: Memorialize Account
-        promote_user: Promote User
-        reject_appeal: Reject Appeal
-        reject_user: Reject User
-        remove_avatar_user: Remove Avatar
-        reopen_report: Reopen Report
-        reset_password_user: Reset Password
-        resolve_report: Resolve Report
-        sensitive_account: Force-Sensitive Account
-        silence_account: Limit Account
-        suspend_account: Suspend Account
-        unassigned_report: Unassign Report
-        unblock_email_account: Unblock email address
-        unsensitive_account: Undo Force-Sensitive Account
-        unsilence_account: Undo Limit Account
-        unsuspend_account: Unsuspend Account
-        update_announcement: Update Announcement
-        update_custom_emoji: Update Custom Emoji
-        update_domain_block: Update Domain Block
-        update_status: Update Post
+        approve_appeal: 抗議を承認
+        approve_user: ユーザーの承認
+        assigned_to_self_report: 通報の担当者に設定
+        change_email_user: ユーザーのメールアドレスを変更
+        change_role_user: ユーザーのロールを変更
+        confirm_user: ユーザーの確認
+        create_account_warning: 警告を作成
+        create_announcement: お知らせを作成
+        create_canonical_email_block: メールブロックを作成
+        create_custom_emoji: カスタム絵文字を作成
+        create_domain_allow: 連合を許可
+        create_domain_block: ドメインブロックを作成
+        create_email_domain_block: メールドメインブロックを作成
+        create_ip_block: IPルールを作成
+        create_unavailable_domain: 配送できないドメインを作成
+        create_user_role: ロールを作成
+        demote_user: ユーザーを降格
+        destroy_announcement: お知らせを削除
+        destroy_canonical_email_block: メールブロックを削除
+        destroy_custom_emoji: カスタム絵文字を削除
+        destroy_domain_allow: 連合許可を外す
+        destroy_domain_block: ドメインブロックを削除
+        destroy_email_domain_block: メールドメインブロックを削除
+        destroy_instance: ドメインをブロックする
+        destroy_ip_block: IPルールを削除
+        destroy_status: 投稿を削除
+        destroy_unavailable_domain: 配送できないドメインを削除
+        destroy_user_role: ロールを削除
+        disable_2fa_user: 二要素認証を無効化
+        disable_custom_emoji: カスタム絵文字を無効化
+        disable_sign_in_token_auth_user: ユーザーのメールトークン認証を無効にする
+        disable_user: ユーザーを無効化
+        enable_custom_emoji: カスタム絵文字を有効化
+        enable_sign_in_token_auth_user: メールトークンのユーザー認証を有効にする
+        enable_user: ユーザーを有効化
+        memorialize_account: 追悼アカウント化
+        promote_user: ユーザーを昇格
+        reject_appeal: 抗議を却下
+        reject_user: ユーザーを拒否
+        remove_avatar_user: アイコンを削除
+        reopen_report: 未解決に戻す
+        reset_password_user: パスワードをリセット
+        resolve_report: 通報を解決済みにする
+        sensitive_account: アカウントのメディアを閲覧注意にマーク
+        silence_account: アカウントをサイレンス
+        suspend_account: アカウントを停止
+        unassigned_report: 通報の担当を解除
+        unblock_email_account: メールアドレスのブロックを解除
+        unsensitive_account: アカウントのメディアの閲覧注意マークを解除
+        unsilence_account: アカウントのサイレンスを解除
+        unsuspend_account: アカウントの停止を解除
+        update_announcement: お知らせを更新
+        update_custom_emoji: カスタム絵文字を更新
+        update_domain_block: ドメインブロックを更新
+        update_ip_block: IPルールを更新
+        update_status: 投稿を更新
+        update_user_role: ロールを更新
       actions:
-        approve_appeal_html: "%{name} approved moderation decision appeal from %{target}"
-        approve_user_html: "%{name} approved sign-up from %{target}"
-        assigned_to_self_report_html: "%{name} assigned report %{target} to themselves"
-        change_email_user_html: "%{name} changed the e-mail address of user %{target}"
-        confirm_user_html: "%{name} confirmed e-mail address of user %{target}"
-        create_account_warning_html: "%{name} sent a warning to %{target}"
-        create_announcement_html: "%{name} created new announcement %{target}"
-        create_custom_emoji_html: "%{name} uploaded new emoji %{target}"
-        create_domain_allow_html: "%{name} allowed federation with domain %{target}"
-        create_domain_block_html: "%{name} blocked domain %{target}"
-        create_email_domain_block_html: "%{name} blocked e-mail domain %{target}"
-        create_ip_block_html: "%{name} created rule for IP %{target}"
-        create_unavailable_domain_html: "%{name} stopped delivery to domain %{target}"
-        demote_user_html: "%{name} demoted user %{target}"
-        destroy_announcement_html: "%{name} deleted announcement %{target}"
-        destroy_custom_emoji_html: "%{name} destroyed emoji %{target}"
-        destroy_domain_allow_html: "%{name} disallowed federation with domain %{target}"
-        destroy_domain_block_html: "%{name} unblocked domain %{target}"
-        destroy_email_domain_block_html: "%{name} unblocked e-mail domain %{target}"
-        destroy_instance_html: "%{name} purged domain %{target}"
-        destroy_ip_block_html: "%{name} deleted rule for IP %{target}"
-        destroy_status_html: "%{name} removed post by %{target}"
-        destroy_unavailable_domain_html: "%{name} resumed delivery to domain %{target}"
-        disable_2fa_user_html: "%{name} disabled two factor requirement for user %{target}"
-        disable_custom_emoji_html: "%{name} disabled emoji %{target}"
-        disable_sign_in_token_auth_user_html: "%{name} disabled e-mail token authentication for %{target}"
-        disable_user_html: "%{name} disabled login for user %{target}"
-        enable_custom_emoji_html: "%{name} enabled emoji %{target}"
-        enable_sign_in_token_auth_user_html: "%{name} enabled e-mail token authentication for %{target}"
-        enable_user_html: "%{name} enabled login for user %{target}"
-        memorialize_account_html: "%{name} turned %{target}'s account into a memoriam page"
-        promote_user_html: "%{name} promoted user %{target}"
-        reject_appeal_html: "%{name} rejected moderation decision appeal from %{target}"
-        reject_user_html: "%{name} rejected sign-up from %{target}"
-        remove_avatar_user_html: "%{name} removed %{target}'s avatar"
-        reopen_report_html: "%{name} reopened report %{target}"
-        reset_password_user_html: "%{name} reset password of user %{target}"
-        resolve_report_html: "%{name} resolved report %{target}"
-        sensitive_account_html: "%{name} marked %{target}'s media as sensitive"
-        silence_account_html: "%{name} limited %{target}'s account"
-        suspend_account_html: "%{name} suspended %{target}'s account"
-        unassigned_report_html: "%{name} unassigned report %{target}"
-        unblock_email_account_html: "%{name} unblocked %{target}'s email address"
-        unsensitive_account_html: "%{name} unmarked %{target}'s media as sensitive"
-        unsilence_account_html: "%{name} undid limit of %{target}'s account"
-        unsuspend_account_html: "%{name} unsuspended %{target}'s account"
-        update_announcement_html: "%{name} updated announcement %{target}"
-        update_custom_emoji_html: "%{name} updated emoji %{target}"
-        update_domain_block_html: "%{name} updated domain block for %{target}"
-        update_status_html: "%{name} updated post by %{target}"
-      deleted_status: "(deleted post)"
-      empty: No logs found.
-      filter_by_action: Filter by action
-      filter_by_user: Filter by user
-      title: Audit log
+        approve_appeal_html: "%{name}さんが%{target}さんからの抗議を承認しました"
+        approve_user_html: "%{target}から登録された%{name}さんを承認しました"
+        assigned_to_self_report_html: "%{name}さんが通報 %{target}を自身の担当に割り当てました"
+        change_email_user_html: "%{name}さんが%{target}さんのメールアドレスを変更しました"
+        change_role_user_html: "%{name}さんが%{target}さんのロールを変更しました"
+        confirm_user_html: "%{name}さんが%{target}さんのメールアドレスを確認済みにしました"
+        create_account_warning_html: "%{name}さんが%{target}さんに警告メールを送信しました"
+        create_announcement_html: "%{name}さんが新しいお知らせ %{target}を作成しました"
+        create_custom_emoji_html: "%{name}さんがカスタム絵文字 %{target}を追加しました"
+        create_domain_allow_html: "%{name}さんが%{target}の連合を許可しました"
+        create_domain_block_html: "%{name}さんがドメイン %{target}をブロックしました"
+        create_email_domain_block_html: "%{name}さんが%{target}をメールドメインブロックに追加しました"
+        create_ip_block_html: "%{name}さんがIP %{target}のルールを作成しました"
+        create_unavailable_domain_html: "%{name}がドメイン %{target}への配送を停止しました"
+        create_user_role_html: "%{name}さんがロール『%{target}』を作成しました"
+        demote_user_html: "%{name}さんが%{target}さんを降格しました"
+        destroy_announcement_html: "%{name}さんがお知らせ %{target}を削除しました"
+        destroy_custom_emoji_html: "%{name}さんがカスタム絵文字『%{target}』を削除しました"
+        destroy_domain_allow_html: "%{name}さんが%{target}の連合許可を外しました"
+        destroy_domain_block_html: "%{name}さんがドメイン %{target}のブロックを外しました"
+        destroy_email_domain_block_html: "%{name}さんが%{target}をメールドメインブロックから外しました"
+        destroy_instance_html: "%{name}さんがドメイン %{target}をブロックしました"
+        destroy_ip_block_html: "%{name}さんが IP %{target}のルールを削除しました"
+        destroy_status_html: "%{name}さんが%{target}さんの投稿を削除しました"
+        destroy_unavailable_domain_html: "%{name}がドメイン %{target}への配送を再開しました"
+        destroy_user_role_html: "%{name}さんがロール『%{target}』を削除しました"
+        disable_2fa_user_html: "%{name}さんが%{target}さんの二要素認証を無効化しました"
+        disable_custom_emoji_html: "%{name}さんがカスタム絵文字 %{target}を無効化しました"
+        disable_sign_in_token_auth_user_html: "%{name}さんが%{target}さんのメールトークン認証を無効にしました"
+        disable_user_html: "%{name}さんが%{target}さんのログインを無効化しました"
+        enable_custom_emoji_html: "%{name}さんがカスタム絵文字 %{target}を有効化しました"
+        enable_sign_in_token_auth_user_html: "%{name}さんが%{target}さんのメールトークン認証を有効にしました"
+        enable_user_html: "%{name}さんが%{target}さんのログインを有効化しました"
+        memorialize_account_html: "%{name}さんが%{target}さんを追悼アカウントページに登録しました"
+        promote_user_html: "%{name}さんが%{target}さんを昇格しました"
+        reject_appeal_html: "%{name}さんが%{target}からの抗議を却下しました"
+        reject_user_html: "%{target}から登録された%{name}さんを拒否しました"
+        remove_avatar_user_html: "%{name}さんが%{target}さんのアイコンを削除しました"
+        reopen_report_html: "%{name}さんが通報 %{target}を未解決に戻しました"
+        reset_password_user_html: "%{name}さんが%{target}さんのパスワードをリセットしました"
+        resolve_report_html: "%{name}さんが通報 %{target}を解決済みにしました"
+        sensitive_account_html: "%{name}さんが%{target}さんのメディアを閲覧注意にマークしました"
+        silence_account_html: "%{name}さんが%{target}さんをサイレンスにしました"
+        suspend_account_html: "%{name}さんが%{target}さんを停止しました"
+        unassigned_report_html: "%{name}さんが通報 %{target}の担当を外しました"
+        unblock_email_account_html: "%{name}さんがドメイン %{target}のブロックを解除しました"
+        unsensitive_account_html: "%{name}さんが%{target}さんのメディアの閲覧注意を解除しました"
+        unsilence_account_html: "%{name}さんが%{target}さんのサイレンスを解除しました"
+        unsuspend_account_html: "%{name}さんが%{target}さんの停止を解除しました"
+        update_announcement_html: "%{name}さんがお知らせ %{target}を更新しました"
+        update_custom_emoji_html: "%{name}さんがカスタム絵文字 %{target}を更新しました"
+        update_domain_block_html: "%{name}さんが%{target}のドメインブロックを更新しました"
+        update_status_html: "%{name}さんが%{target}さんの投稿を更新しました"
+        update_user_role_html: "%{name}さんがロール『%{target}』を変更しました"
+      empty: ログが見つかりませんでした
+      filter_by_action: アクションでフィルター
+      filter_by_user: ユーザーでフィルター
+      title: 操作履歴
     announcements:
       destroyed_msg: Announcement successfully deleted!
       edit:
@@ -423,12 +388,13 @@ en:
       destroyed_msg: Domain has been disallowed from federation
       undo: Disallow federation with domain
     domain_blocks:
-      add_new: Add new domain block
-      created_msg: Domain block is now being processed
-      destroyed_msg: Domain block has been undone
-      domain: Domain
-      edit: Edit domain block
-      existing_domain_block_html: You have already imposed stricter limits on %{name}, you need to <a href="%{unblock_url}">unblock it</a> first.
+      add_new: ドメインブロックを追加
+      created_msg: ドメインブロック処理を完了しました
+      destroyed_msg: ドメインブロックを外しました
+      domain: ドメイン
+      edit: ドメインブロックを編集
+      existing_domain_block: あなたは既に%{name}さんに厳しい制限を課しています。
+      existing_domain_block_html: 既に%{name}に対して、より厳しい制限を課しています。先に<a href="%{unblock_url}">その制限を解除</a>する必要があります。
       new:
         create: Create block
         hint: The domain block will not prevent creation of account entries in the database, but will retroactively and automatically apply specific moderation methods on those accounts.
@@ -623,31 +589,86 @@ en:
       mark_as_unresolved: Mark as unresolved
       no_one_assigned: No one
       notes:
-        create: Add note
-        create_and_resolve: Resolve with note
-        create_and_unresolve: Reopen with note
-        delete: Delete
-        placeholder: Describe what actions have been taken, or any other related updates...
-        title: Notes
-      notes_description_html: View and leave notes to other moderators and your future self
-      quick_actions_description_html: 'Take a quick action or scroll down to see reported content:'
-      remote_user_placeholder: the remote user from %{instance}
-      reopen: Reopen report
-      report: 'Report #%{id}'
-      reported_account: Reported account
-      reported_by: Reported by
-      resolved: Resolved
-      resolved_msg: Report successfully resolved!
-      skip_to_actions: Skip to actions
-      status: Status
-      statuses: Reported content
-      statuses_description_html: Offending content will be cited in communication with the reported account
-      target_origin: Origin of reported account
-      title: Reports
-      unassign: Unassign
-      unresolved: Unresolved
-      updated_at: Updated
-      view_profile: View profile
+        create: 書き込む
+        create_and_resolve: 書き込み、解決済みにする
+        create_and_unresolve: 書き込み、未解決に戻す
+        delete: 削除
+        placeholder: どのような措置が取られたか、または関連する更新を記述してください…
+        title: メモ
+      notes_description_html: 他のモデレーターと将来の自分にメモを残してください
+      quick_actions_description_html: 'クイックアクションを実行するかスクロールして報告された通報を確認してください:'
+      remote_user_placeholder: "%{instance}からのリモートユーザー"
+      reopen: 未解決に戻す
+      report: '通報 #%{id}'
+      reported_account: 報告対象アカウント
+      reported_by: 報告者
+      resolved: 解決済み
+      resolved_msg: 通報を解決済みにしました！
+      skip_to_actions: アクションに移動
+      status: ステータス
+      statuses: 通報内容
+      statuses_description_html: 問題の投稿は通報されたアカウントへの連絡時に引用されます
+      target_origin: 報告されたアカウントの起源
+      title: 通報
+      unassign: 担当を外す
+      unresolved: 未解決
+      updated_at: 更新日時
+      view_profile: プロフィールを表示
+    roles:
+      add_new: ロールを追加
+      assigned_users:
+        other: "%{count}人"
+      categories:
+        administration: 管理
+        devops: 開発者
+        invites: 招待
+        moderation: モデレーション
+        special: スペシャル
+      delete: 削除
+      description_html: "<strong>ユーザー ロール</strong>を使用すると、ユーザーがアクセスできる Mastodon の機能や領域をカスタマイズできます。"
+      edit: "『%{name}』のロールを編集"
+      everyone: デフォルトの権限
+      everyone_full_description_html: これは、割り当てられたロールを持っていないものであっても、 <strong>すべてのユーザー</strong> に影響を与える <strong>基本ロール</strong>です。 他のすべてのロールは、そこから権限を継承します。
+      permissions_count:
+        other: "%{count}件の権限"
+      privileges:
+        administrator: 管理者
+        administrator_description: この権限を持つユーザーはすべての権限をバイパスします
+        delete_user_data: ユーザーデータの削除
+        delete_user_data_description: ユーザーは、遅滞なく他のユーザーのデータを削除することができます
+        invite_users: ユーザーを招待
+        invite_users_description: ユーザーが新しい人を招待できるようにします
+        manage_announcements: お知らせの管理
+        manage_announcements_description: ユーザーがアナウンスを管理できるようにします
+        manage_appeals: 抗議の管理
+        manage_appeals_description: ユーザーはモデレーションアクションに対する抗議を確認できます
+        manage_blocks: ブロックの管理
+        manage_blocks_description: ユーザーがメールプロバイダとIPアドレスをブロックできるようにします
+        manage_custom_emojis: カスタム絵文字を管理
+        manage_custom_emojis_description: ユーザーがサーバー上のカスタム絵文字を管理できるようにします
+        manage_federation: 連合の管理
+        manage_federation_description: ユーザーが他のドメインとの連合をブロックまたは許可したり、配信を制御したりできます。
+        manage_invites: 招待を管理
+        manage_reports: レポートの管理
+        manage_reports_description: ユーザーがレポートを確認したり、モデレーションアクションを実行したりできます。
+        manage_roles: ロールの管理
+        manage_rules: ルールの管理
+        manage_rules_description: ユーザーがサーバールールを変更できるようにします
+        manage_settings: 設定の管理
+        manage_settings_description: ユーザーがサイト設定を変更できるようにします
+        manage_taxonomies_description: トレンドコンテンツの確認とハッシュタグの設定の更新
+        manage_user_access: アクセス権を管理
+        manage_user_access_description: 他のユーザーの2段階認証を無効にしたり、メールアドレスを変更したり、パスワードをリセットしたりすることができます。
+        manage_users: ユーザーの管理
+        manage_webhooks: Webhookの管理
+        manage_webhooks_description: 管理者イベントのWebhookを設定できます。
+        view_audit_log: 監査ログの表示
+        view_audit_log_description: ユーザーがサーバー上で管理アクションの履歴を表示できるようにします
+        view_dashboard: ダッシュボードの表示
+        view_dashboard_description: ユーザーがダッシュボードやさまざまなメトリクスにアクセスできるようにします
+        view_devops: 開発者
+        view_devops_description: Sidekiq と pgHero ダッシュボードにアクセスできるようにします
+      title: ロール
     rules:
       add_new: Add rule
       delete: Delete
@@ -677,10 +698,7 @@ en:
         title: Show domain blocks
         users: To logged-in local users
       domain_blocks_rationale:
-        title: Show rationale
-      hero:
-        desc_html: Displayed on the frontpage. At least 600x100px recommended. When not set, falls back to server thumbnail
-        title: Hero image
+        title: コメントを表示
       mascot:
         desc_html: Displayed on multiple pages. At least 293×205px recommended. When not set, falls back to default mascot
         title: Mascot image
@@ -695,29 +713,17 @@ en:
         title: Enable profile directory
       registrations:
         closed_message:
-          desc_html: Displayed on frontpage when registrations are closed. You can use HTML tags
-          title: Closed registration message
-        deletion:
-          desc_html: Allow anyone to delete their account
-          title: Open account deletion
-        min_invite_role:
-          disabled: No one
-          title: Allow invitations by
+          desc_html: 新規登録を停止しているときにフロントページに表示されます。HTMLタグが使えます
+          title: 新規登録停止時のメッセージ
         require_invite_text:
           desc_html: When registrations require manual approval, make the “Why do you want to join?” text input mandatory rather than optional
           title: Require new users to enter a reason to join
       registrations_mode:
         modes:
-          approved: Approval required for sign up
-          none: Nobody can sign up
-          open: Anyone can sign up
-        title: Registrations mode
-      show_known_fediverse_at_about_page:
-        desc_html: When disabled, restricts the public timeline linked from the landing page to showing only local content
-        title: Include federated content on unauthenticated public timeline page
-      show_staff_badge:
-        desc_html: Show a staff badge on a user page
-        title: Show staff badge
+          approved: 登録には承認が必要
+          none: 誰にも許可しない
+          open: 誰でも登録可
+        title: 新規登録
       site_description:
         desc_html: Introductory paragraph on the API. Describe what makes this Mastodon server special and anything else important. You can use HTML tags, in particular <code>&lt;a&gt;</code> and <code>&lt;em&gt;</code>.
         title: Server description
@@ -728,19 +734,15 @@ en:
         desc_html: Displayed in sidebar and meta tags. Describe what Mastodon is and what makes this server special in a single paragraph.
         title: Short server description
       site_terms:
-        desc_html: You can write your own privacy policy, terms of service or other legalese. You can use HTML tags
-        title: Custom terms of service
-      site_title: Server name
+        title: カスタムプライバシーポリシー
+      site_title: サーバーの名前
       thumbnail:
         desc_html: Used for previews via OpenGraph and API. 1200x630px recommended
         title: Server thumbnail
       timeline_preview:
-        desc_html: Display link to public timeline on landing page and allow API access to the public timeline without authentication
-        title: Allow unauthenticated access to public timeline
-      title: Site settings
-      trendable_by_default:
-        desc_html: Affects hashtags that have not been previously disallowed
-        title: Allow hashtags to trend without prior review
+        desc_html: ランディングページに公開タイムラインへのリンクを表示し、認証なしでの公開タイムラインへのAPIアクセスを許可します
+        title: 公開タイムラインへの未認証のアクセスを許可する
+      title: サイト設定
       trends:
         desc_html: Publicly display previously reviewed content that is currently trending
         title: Trends
@@ -846,11 +848,26 @@ en:
       title: Trends
       trending: Trending
     warning_presets:
-      add_new: Add new
-      delete: Delete
-      edit_preset: Edit warning preset
-      empty: You haven't defined any warning presets yet.
-      title: Manage warning presets
+      add_new: 追加
+      delete: 削除
+      edit_preset: プリセット警告文を編集
+      empty: まだプリセット警告文が作成されていません。
+      title: プリセット警告文を管理
+    webhooks:
+      add_new: エンドポイントを追加
+      delete: 削除
+      disable: 無効化
+      disabled: 無効
+      edit: エンドポイントを編集
+      enable: 有効化
+      enabled: アクティブ
+      enabled_events:
+        other: "%{count}件の有効なイベント"
+      events: イベント
+      new: 新しいwebhook
+      status: ステータス
+      title: Webhooks
+      webhook: Webhook
   admin_mailer:
     new_appeal:
       actions:
@@ -874,13 +891,9 @@ en:
     new_trends:
       body: 'The following items need a review before they can be displayed publicly:'
       new_trending_links:
-        no_approved_links: There are currently no approved trending links.
-        requirements: 'Any of these candidates could surpass the #%{rank} approved trending link, which is currently "%{lowest_link_title}" with a score of %{lowest_link_score}.'
-        title: Trending links
+        title: トレンドリンク
       new_trending_statuses:
-        no_approved_statuses: There are currently no approved trending posts.
-        requirements: 'Any of these candidates could surpass the #%{rank} approved trending post, which is currently %{lowest_status_url} with a score of %{lowest_status_score}.'
-        title: Trending posts
+        title: トレンド投稿
       new_trending_tags:
         no_approved_tags: There are currently no approved trending hashtags.
         requirements: 'Any of these candidates could surpass the #%{rank} approved trending hashtag, which is currently #%{lowest_tag_name} with a score of %{lowest_tag_score}.'
@@ -913,20 +926,17 @@ en:
     view_profile: View profile
     view_status: View post
   applications:
-    created: Application successfully created
-    destroyed: Application successfully deleted
-    invalid_url: The provided URL is invalid
-    regenerate_token: Regenerate access token
-    token_regenerated: Access token successfully regenerated
-    warning: Be very careful with this data. Never share it with anyone!
-    your_token: Your access token
+    created: アプリが作成されました
+    destroyed: アプリが削除されました
+    regenerate_token: アクセストークンの再生成
+    token_regenerated: アクセストークンが再生成されました
+    warning: このデータは気をつけて取り扱ってください。他の人と共有しないでください！
+    your_token: アクセストークン
   auth:
-    apply_for_account: Request an invite
-    change_password: Password
-    checkbox_agreement_html: I agree to the <a href="%{rules_path}" target="_blank">server rules</a> and <a href="%{terms_path}" target="_blank">terms of service</a>
-    checkbox_agreement_without_rules_html: I agree to the <a href="%{terms_path}" target="_blank">terms of service</a>
-    delete_account: Delete account
-    delete_account_html: If you wish to delete your account, you can <a href="%{path}">proceed here</a>. You will be asked for confirmation.
+    apply_for_account: ウェイトリストを取得する
+    change_password: パスワード
+    delete_account: アカウントの削除
+    delete_account_html: アカウントを削除したい場合、<a href="%{path}">こちら</a>から手続きが行えます。削除する前に、確認画面があります。
     description:
       prefix_invited_by_user: "@%{name} invites you to join Explore.Beer!"
       prefix_sign_up: Sign up on Explore.Beer today!
@@ -957,15 +967,14 @@ en:
       email_settings_hint_html: The confirmation e-mail was sent to %{email}. If that e-mail address is not correct, you can change it in account settings.
       title: Setup
     status:
-      account_status: Account status
-      confirming: Waiting for e-mail confirmation to be completed.
-      functional: Your account is fully operational.
-      pending: Your application is pending review by our staff. This may take some time. You will receive an e-mail if your application is approved.
-      redirecting_to: Your account is inactive because it is currently redirecting to %{acct}.
-      view_strikes: View past strikes against your account
-    too_fast: Form submitted too fast, try again.
-    trouble_logging_in: Trouble logging in?
-    use_security_key: Use security key
+      account_status: アカウントの状態
+      confirming: メールアドレスの確認が完了するのを待っています。
+      functional: アカウントは完全に機能しています。
+      pending: あなたの申請は現在サーバー管理者による審査待ちです。これにはしばらくかかります。申請が承認されるとメールが届きます。
+      redirecting_to: アカウントは%{acct}に引っ越し設定されているため非アクティブになっています。
+      view_strikes: 過去のストライクを表示
+    too_fast: フォームの送信が速すぎます。もう一度やり直してください。
+    use_security_key: セキュリティキーを使用
   authorize_follow:
     already_following: You are already following this account
     already_requested: You have already sent a follow request to that account
@@ -1012,20 +1021,16 @@ en:
     proceed: Delete account
     success_msg: Your account was successfully deleted
     warning:
-      before: 'Before proceeding, please read these notes carefully:'
-      caches: Content that has been cached by other servers may persist
-      data_removal: Your posts and other data will be permanently removed
-      email_change_html: You can <a href="%{path}">change your e-mail address</a> without deleting your account
-      email_contact_html: If it still doesn't arrive, you can e-mail <a href="mailto:%{email}">%{email}</a> for help
-      email_reconfirmation_html: If you are not receiving the confirmation e-mail, you can <a href="%{path}">request it again</a>
-      irreversible: You will not be able to restore or reactivate your account
-      more_details_html: For more details, see the <a href="%{terms_path}">privacy policy</a>.
-      username_available: Your username will become available again
-      username_unavailable: Your username will remain unavailable
-  directories:
-    directory: Profile directory
-    explanation: Discover users based on their interests
-    explore_mastodon: Explore Beer
+      before: '続行する前に、次の点を再度確認してください:'
+      caches: 他のサーバーにコンテンツのキャッシュがずっと残る場合があります
+      data_removal: あなたの投稿やその他のデータはこのサーバーから完全に削除されます
+      email_change_html: アカウントを削除しなくても<a href="%{path}">メールアドレスを変更</a>できます
+      email_contact_html: それでも届かない場合、<a href="mailto:%{email}">%{email}</a>までメールで問い合わせてください
+      email_reconfirmation_html: 確認のメールが届かない場合、<a href="%{path}">もう一度申請</a>できます。
+      irreversible: 削除操作の撤回やアカウントの復活はできません
+      more_details_html: 詳しくは<a href="%{terms_path}">プライバシーポリシー</a>をご覧ください。
+      username_available: あなたのユーザー名は再利用できるようになります
+      username_unavailable: あなたのユーザー名は引き続き利用できません
   disputes:
     strikes:
       action_taken: Action taken
@@ -1104,30 +1109,49 @@ en:
       public: Public timelines
       thread: Conversations
     edit:
-      title: Edit filter
+      add_keyword: キーワードを追加
+      keywords: キーワード
+      statuses: 個別の投稿
+      title: フィルターを編集
     errors:
-      invalid_context: None or invalid context supplied
-      invalid_irreversible: Irreversible filtering only works with home or notifications context
+      invalid_context: 対象がないか無効です
     index:
-      delete: Delete
-      empty: You have no filters.
-      title: Filters
+      contexts: "%{contexts}のフィルター"
+      delete: 削除
+      empty: フィルターはありません。
+      expires_in: "%{distance}で期限切れ"
+      expires_on: 有効期限 %{date}
+      keywords:
+        other: "%{count}件のキーワード"
+      statuses:
+        other: "%{count}件の投稿"
+      statuses_long:
+        other: "%{count}件の投稿を非表示にしました"
+      title: フィルター
     new:
-      title: Add new filter
+      save: 新規フィルターを保存
+      title: 新規フィルターを追加
+    statuses:
+      back_to_filter: フィルタに戻る
+      batch:
+        remove: フィルターから削除する
+      index:
+        title: フィルターされた投稿
   footer:
     developers: Developers
     more: More…
     resources: Resources
     trending_now: Trending now
   generic:
-    all: All
-    changes_saved_msg: Changes successfully saved!
-    copy: Copy
-    delete: Delete
-    none: None
-    order_by: Order by
-    save_changes: Save changes
-    today: today
+    all: すべて
+    changes_saved_msg: 正常に変更されました！
+    copy: コピー
+    delete: 削除
+    deselect: 選択解除
+    none: なし
+    order_by: 並び順
+    save_changes: 変更を保存
+    today: 今日
     validation_errors:
       one: Something isn't quite right yet! Please review the error below
       other: Something isn't quite right yet! Please review %{count} errors below
@@ -1231,19 +1255,10 @@ en:
     copy_account_note_text: 'This user moved from %{acct}, here were your previous notes about them:'
   notification_mailer:
     admin:
+      report:
+        subject: "%{name}さんがレポートを送信しました"
       sign_up:
-        subject: "%{name} signed up"
-    digest:
-      action: View all notifications
-      body: Here is a brief summary of the messages you missed since your last visit on %{since}
-      mention: "%{name} mentioned you in:"
-      new_followers_summary:
-        one: Also, you have acquired one new follower while being away! Yay!
-        other: Also, you have acquired %{count} new followers while being away! Amazing!
-      subject:
-        one: "1 new notification since your last visit 🐘"
-        other: "%{count} new notifications since your last visit 🐘"
-      title: In your absence...
+        subject: "%{name}さんがサインアップしました"
     favourite:
       body: 'Your post was favourited by %{name}:'
       subject: "%{name} favourited your post"
@@ -1313,9 +1328,11 @@ en:
       too_few_options: must have more than one item
       too_many_options: can't contain more than %{max} items
   preferences:
-    other: Other
-    posting_defaults: Posting defaults
-    public_timelines: Public timelines
+    other: その他
+    posting_defaults: デフォルトの投稿設定
+    public_timelines: 公開タイムライン
+  privacy_policy:
+    title: プライバシーポリシー
   reactions:
     errors:
       limit_reached: Limit of different reactions reached
@@ -1524,90 +1541,7 @@ en:
     errors:
       too_late: It is too late to appeal this strike
   tags:
-    does_not_match_previous_name: does not match the previous name
-  terms:
-    body_html: |
-      <h2>プライバシーポリシー</h2>
-      <h3 id="collect">どのような情報を収集しますか？</h3>
-
-      <ul>
-        <li><em>基本的なアカウント情報</em>: 当サイトに登録すると、ユーザー名・メールアドレス・パスワードの入力を求められることがあります。また表示名や自己紹介・プロフィール画像・ヘッダー画像といった追加のプロフィールを登録できます。ユーザー名・表示名・自己紹介・プロフィール画像・ヘッダー画像は常に公開されます。</li>
-        <li><em>投稿・フォロー・その他公開情報</em>: フォローしているユーザーの一覧は一般公開されます。フォロワーも同様です。メッセージを投稿する際、日時だけでなく投稿に使用したアプリケーション名も記録されます。メッセージには写真や動画といった添付メディアを含むことがあります。「公開」や「未収載」の投稿は一般公開されます。プロフィールに投稿を載せるとそれもまた公開情報となります。投稿はフォロワーに配信されます。場合によっては他のサーバーに配信され、そこにコピーが保存されることを意味します。投稿を削除した場合も同様にフォロワーに配信されます。他の投稿をリブログやお気に入り登録する行動は常に公開されます。</li>
-        <li><em>「ダイレクト」と「フォロワー限定」投稿</em>: すべての投稿はサーバーに保存され、処理されます。「フォロワー限定」投稿はフォロワーと投稿に書かれたユーザーに配信されます。「ダイレクト」投稿は投稿に書かれたユーザーにのみ配信されます。場合によっては他のサーバーに配信され、そこにコピーが保存されることを意味します。私たちはこれらの閲覧を一部の許可された者に限定するよう誠意を持って努めます。しかし他のサーバーにおいても同様に扱われるとは限りません。したがって、相手の所属するサーバーを吟味することが重要です。設定で新しいフォロワーの承認または拒否を手動で行うよう切り替えることもできます。<em>サーバー管理者は「ダイレクト」や「フォロワー限定」投稿も閲覧する可能性があることを忘れないでください。</em>また受信者がスクリーンショットやコピー、もしくは共有する可能性があることを忘れないでください。<em>いかなる機微な情報もMastodon上で共有しないでください。</em></li>
-        <li><em>IPアドレスやその他メタデータ</em>: ログインする際IPアドレスだけでなくブラウザーアプリケーション名を記録します。ログインしたセッションはすべてユーザー設定で見直し、取り消すことができます。使用されている最新のIPアドレスは最大12ヵ月間保存されます。またサーバーへのIPアドレスを含むすべてのリクエストのログを保持することがあります。</li>
-      </ul>
-
-      <hr class="spacer" />
-
-      <h3 id="use">情報を何に使用しますか？</h3>
-
-      <p>収集した情報は次の用途に使用されることがあります:</p>
-
-      <ul>
-        <li>Mastodonのコア機能の提供: ログインしている間にかぎり他の人たちと投稿を通じて交流することができます。例えば自分専用のホームタイムラインで投稿をまとめて読むために他の人たちをフォローできます。</li>
-        <li>コミュニティ維持の補助: 例えばIPアドレスを既知のものと比較し、BAN回避目的の複数登録者やその他違反者を判別します。</li>
-        <li>提供されたメールアドレスはお知らせの送信・投稿に対するリアクションやメッセージ送信の通知・お問い合わせやその他要求や質問への返信に使用されることがあります。</li>
-      </ul>
-
-      <hr class="spacer" />
-
-      <h3 id="protect">情報をどのように保護しますか？</h3>
-
-      <p>私たちはあなたが入力・送信する際や自身の情報にアクセスする際に個人情報を安全に保つため、さまざまなセキュリティ上の対策を実施します。特にブラウザーセッションだけでなくアプリケーションとAPI間の通信もSSLによって保護されます。またパスワードは強力な不可逆アルゴリズムでハッシュ化されます。二要素認証を有効にし、アカウントへのアクセスをさらに安全にすることができます。</p>
-
-      <hr class="spacer" />
-
-      <h3 id="data-retention">データ保持方針はどうなっていますか？</h3>
-
-      <p>私たちは次のように誠意を持って努めます:</p>
-
-      <ul>
-        <li>当サイトへのIPアドレスを含むすべての要求に対するサーバーログを90日以内のできるかぎりの間保持します。</li>
-        <li>登録されたユーザーに関連付けられたIPアドレスを12ヵ月以内の間保持します。</li>
-      </ul>
-
-      <p>あなたは投稿・添付メディア・プロフィール画像・ヘッダー画像を含む自身のデータのアーカイブを要求し、ダウンロードすることができます。</p>
-
-      <p>あなたはいつでもアカウントの削除を要求できます。削除は取り消すことができません。</p>
-
-      <hr class="spacer" />
-
-      <h3 id="cookies">クッキーを使用していますか？</h3>
-
-      <p>はい。クッキーは (あなたが許可した場合に) WebサイトやサービスがWebブラウザーを介してコンピューターに保存する小さなファイルです。使用することでWebサイトがブラウザーを識別し、登録済みのアカウントがある場合関連付けます。</p>
-
-      <p>私たちはクッキーを将来の訪問のために設定を保存し呼び出す用途に使用します。</p>
-
-      <hr class="spacer" />
-
-      <h3 id="disclose">なんらかの情報を外部に提供していますか？</h3>
-
-      <p>私たちは個人を特定できる情報を外部へ販売・取引・その他方法で渡すことはありません。これには当サイトの運営・業務遂行・サービス提供を行ううえで補助する信頼できる第三者をこの機密情報の保護に同意するかぎり含みません。法令の遵守やサイトポリシーの施行、権利・財産・安全の保護に適切と判断した場合、あなたの情報を公開することがあります。</p>
-
-      <p>あなたの公開情報はネットワーク上の他のサーバーにダウンロードされることがあります。相手が異なるサーバーに所属する場合、「公開」と「フォロワー限定」投稿はフォロワーの所属するサーバーに配信され、「ダイレクト」投稿は受信者の所属するサーバーに配信されます。</p>
-
-      <p>あなたがアカウントの使用をアプリケーションに許可すると、承認した権限の範囲内で公開プロフィール情報・フォローリスト・フォロワー・リスト・すべての投稿・お気に入り登録にアクセスできます。アプリケーションはメールアドレスやパスワードに決してアクセスできません。</p>
-
-      <hr class="spacer" />
-
-      <h3 id="children">児童によるサイト利用について</h3>
-
-      <p>サーバーがEUまたはEEA圏内にある場合: 当サイト・製品・サービスは16歳以上の人を対象としています。あなたが16歳未満の場合、GDPR (<a href="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation">General Data Protection Regulation</a> - EU一般データ保護規則) により当サイトを使用できません。</p>
-
-      <p>サーバーが米国にある場合: 当サイト・製品・サービスは13歳以上の人を対象としています。あなたが13歳未満の場合、COPPA (<a href="https://en.wikipedia.org/wiki/Children%27s_Online_Privacy_Protection_Act">Children's Online Privacy Protection Act</a> - 児童オンラインプライバシー保護法) により当サイトを使用できません。</p>
-
-      <p>サーバーが別の管轄区域にある場合、法的要件は異なることがあります。</p>
-
-      <hr class="spacer" />
-
-      <h3 id="changes">プライバシーポリシーの変更</h3>
-
-      <p>プライバシーポリシーの変更を決定した場合、このページに変更点を掲載します。</p>
-
-      <p>この文章のライセンスはCC-BY-SAです。最終更新日は2021年6月1日です。</p>
-
-      <p>オリジナルの出典: <a href="https://github.com/discourse/discourse">Discourse privacy policy</a></p>
-    title: "%{instance} 利用規約・プライバシーポリシー"
+    does_not_match_previous_name: 以前の名前と一致しません
   themes:
     contrast: Mastodon (High contrast)
     default: Mastodon (Dark)
@@ -1685,22 +1619,13 @@ en:
         silence: Account limited
         suspend: Account suspended
     welcome:
-      edit_profile_action: Setup profile
-      edit_profile_step: You can customize your profile by uploading an avatar, header, changing your display name and more. If you’d like to review new followers before they’re allowed to follow you, you can lock your account.
-      explanation: Here are some tips to get you started
-      final_action: Start posting
-      final_step: 'Start posting! Even without followers your public posts may be seen by others, for example on the local timeline and in hashtags. You may want to introduce yourself on the #introductions hashtag.'
-      full_handle: Your full handle
-      full_handle_hint: This is what you would tell your friends so they can message or follow you from another server.
-      review_preferences_action: Change preferences
-      review_preferences_step: Make sure to set your preferences, such as which emails you'd like to receive, or what privacy level you’d like your posts to default to. If you don’t have motion sickness, you could choose to enable GIF autoplay.
-      subject: Welcome to Explore.Beer
-      tip_federated_timeline: The federated timeline is a firehose view of the federated network. But it only includes people your neighbours are subscribed to, so it's not complete.
-      tip_following: You follow your server's admin(s) by default. To find more interesting people, check the local and federated timelines.
-      tip_local_timeline: The local timeline is a firehose view of people on %{instance}. These are your immediate neighbours!
-      tip_mobile_webapp: If your mobile browser offers you to add Explore.Beer to your homescreen, you can receive push notifications. It acts like a native app in many ways!
-      tips: Tips
-      title: Welcome aboard, %{name}!
+      edit_profile_action: プロフィールを設定
+      explanation: 始めるにあたってのアドバイスです
+      final_action: 始めましょう
+      full_handle: あなたの正式なユーザーID
+      full_handle_hint: 別のサーバーの友達とフォローやメッセージをやり取りする際には、これを伝えることになります。
+      subject: Mastodonへようこそ
+      title: ようこそ、%{name}さん！
   users:
     follow_limit_reached: You cannot follow more than %{limit} people
     invalid_otp_token: Invalid two-factor code

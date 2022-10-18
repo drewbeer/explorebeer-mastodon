@@ -1,6 +1,6 @@
 RSS::Builder.build do |doc|
-  doc.title("##{@tag.name}")
-  doc.description(I18n.t('rss.descriptions.tag', hashtag: @tag.name))
+  doc.title("##{@tag.display_name}")
+  doc.description(I18n.t('rss.descriptions.tag', hashtag: @tag.display_name))
   doc.link(tag_url(@tag))
   doc.last_build_date(@statuses.first.created_at) if @statuses.any?
   doc.logo(full_pack_url('media/images/logo_transparent_white.svg'))
@@ -28,7 +28,7 @@ RSS::Builder.build do |doc|
       end
 
       status.tags.each do |tag|
-        item.category(tag.name)
+        item.category(tag.display_name)
       end
     end
   end

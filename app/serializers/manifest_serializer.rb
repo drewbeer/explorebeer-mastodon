@@ -10,11 +10,11 @@ class ManifestSerializer < ActiveModel::Serializer
              :share_target, :shortcuts
 
   def name
-    object.site_title
+    object.title
   end
 
   def short_name
-    object.site_title
+    object.title
   end
 
   def description

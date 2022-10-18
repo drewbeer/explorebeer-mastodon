@@ -2,26 +2,371 @@
 io:
   about:
     about_mastodon_html: Mastodon esas <em>gratuita, apertitkodexa</em> sociala reto. Ol esas <em>sencentra</em> altra alternativo a komercala servadi. Ol evitigas, ke sola firmo guvernez tua tota komunikadol. Selektez servero, quan tu fidas. Irge qua esas tua selekto, tu povas komunikar kun omna altra uzeri. Irgu povas krear sua propra instaluro di Mastodon en sua servero, e partoprenar en la <em>sociala reto</em> tote glate.
-    about_this: Pri ta instaluro
-    contact: Kontaktar
+    api: API
+    apps: Smartfonsoftwari
+    contact_missing: Ne fixigita
+    contact_unavailable: Nula
+    documentation: Dokumentajo
+    hosted_on: Mastodon hostigesas che %{domain}
+    privacy_policy: Privatesguidilo
     source_code: Fontkodexo
-    status_count_before: Qua publikigis
-    user_count_before: Hemo di
+    what_is_mastodon: Quo esas Mastodon?
   accounts:
     follow: Sequar
     following: Sequati
     nothing_here: Esas nulo hike!
     people_followed_by: Sequati da %{name}
     people_who_follow: Sequanti di %{name}
+    pin_errors:
+      following: Vu mustas ja sequar persono quon vu volas estalar
+    posts:
+      one: Posto
+      other: Posti
+    posts_tab_heading: Posti
+    posts_with_replies: Posti e respondi
+    roles:
+      bot: Boto
+      group: Grupo
+    unavailable: Profilo esas nedisponebla
     unfollow: Dessequar
   admin:
     accounts:
       are_you_sure: Ka tu esas certa?
+      avatar: Profilimajo
+      by_domain: Domeno
+      change_email:
+        changed_msg: Kontoretposto sucesoze chanjesis!
+        current_email: Nuna retposto
+        label: Chanjez retposto
+        new_email: Nova retposto
+        submit: Chanjez retposto
+        title: Chanjez retposto por %{username}
+      change_role:
+        changed_msg: Rolo sucesoze chanjesis!
+        label: Chanjez rolo
+        no_role: Nula rolo
+        title: Chanjez rolo por %{username}
+      confirm: Konfirmez
+      confirmed: Konfirmita
+      confirming: Ankore konfirmesas
+      custom: Kustuma
+      delete: Efacez informi
+      deleted: Efacita
+      demote: Despromocez
+      destroyed_msg: Informi di %{username} nun aranjesis por efacesar aparante
+      disable: Frostigez
+      disable_sign_in_token_auth: Desaktivigez retpostofichyurizeso
+      disable_two_factor_authentication: Desaktivigez 2FA
+      disabled: Desinterdiktita
+      display_name: Profilnomo
+      domain: Domeno
+      edit: Modifikez
       email: E-mail
+      email_status: Retpostostando
+      enable: Defrostigez
+      enable_sign_in_token_auth: Aktivigez retpostofichyurizeso
+      enabled: Aktivigita
+      enabled_msg: Sucesoze desfrostigas konto di %{username}
+      followers: Uzanti
+      follows: Uzati
+      header: Kapimajo
+      inbox_url: URL di mesajbuxo
+      invite_request_text: Juntomotivo
+      invited_by: Invitesis da
+      ip: IP
+      joined: Juntita
+      location:
+        all: Omna
+        local: Lokala
+        remote: Nelokala
+        title: Loko
+      login_status: Enirstando
+      media_attachments: Mediiatachaji
+      memorialize: Memorializez
+      memorialized: Memorializita
+      memorialized_msg: Sucesoze chanjesis %{username} a memorialkonto
+      moderation:
+        active: Aktiva
+        all: Omna
+        pending: Vartanta
+        silenced: Limitizita
+        suspended: Restriktita
+        title: Jero
+      moderation_notes: Jernoti
+      most_recent_activity: Maxim recenta aktiveso
+      most_recent_ip: Maxim recenta IP
+      no_account_selected: Nula konti chanjesis pro ke nulo selektesis
+      no_limits_imposed: Limiti ne fixesis
+      no_role_assigned: Nula rolo
+      not_subscribed: Ne abonita
+      pending: Vartar kontrolo
       perform_full_suspension: Perform full suspension
+      previous_strikes: Antea streki
+      previous_strikes_description_html:
+        one: Ca konto havas <strong>1</strong> streko.
+        other: Ca konto havas <strong>%{count}</strong> streki.
+      promote: Promocez
+      protocol: Protokolo
+      public: Publika
+      push_subscription_expires: Abono PuSH expiras
+      redownload: Rifreshigez profilo
+      redownloaded_msg: Sucesoze rifreshis profilo di %{username} de origino
+      reject: Refuzez
+      rejected_msg: Sucesoze refuzis registroapliko di %{username}
+      remove_avatar: Efacez profilimajo
+      remove_header: Efacez kapimajo
+      removed_avatar_msg: Sucesoze efacis profilimajo di %{username}
+      removed_header_msg: Sucesoze efacis kapimajo di %{username}
+      resend_confirmation:
+        already_confirmed: Ca uzanto ja konfirmesis
+        send: Risendez konfirmretposto
+        success: Konfirmretposto sucesoze sendesas!
+      reset: Richanjez
+      reset_password: Richanjez pasvorto
+      resubscribe: Riabonez
+      role: Rolo
+      search: Trovez
+      search_same_email_domain: Altra uzanti kun sama retpostodomeno
+      search_same_ip: Altra uzanti kun sama IP
+      security_measures:
+        only_password: Nur pasvorto
+        password_and_2fa: Pasvorto e 2FA
+      sensitive: Forcsentoza
+      sensitized: Markizesis quale sentoza
+      shared_inbox_url: Partigita URL di mesajbuxo
       show:
         created_reports: Reports created by this account
         targeted_reports: Reports made about this account
+      silence: Limito
+      silenced: Limitizita
+      statuses: Posti
+      strikes: Antea streki
+      subscribe: Abonez
+      suspend: Restriktez
+      suspended: Restriktita
+      suspension_irreversible: Ca informi di ca konto neinversigeble efacesis. Vu povas derestriktar konto por uzebligar lu ma ol ne riganos irga dati quon ol antee havis.
+      suspension_reversible_hint_html: Ca konto restriktesis, e ca informi tota efacesos en %{date}. Ante ta tempo, konto povas riganesar sen irga mala efekti. Se vu volas efacar omna informi di konto quik, vu povas agar lu sube.
+      title: Konti
+      unblock_email: Deobstruktez retpostoadreso
+      unblocked_email_msg: Sucesoze deobstruktis retpostoadreso di %{username}
+      unconfirmed_email: Nekonfirmita retposto
+      undo_sensitized: Deagez forcsentoza
+      undo_silenced: Deagez limito
+      undo_suspension: Deagez restrikto
+      unsilenced_msg: Sucesoza inversigis limito di konto di %{username}
+      unsubscribe: Deabonez
+      unsuspended_msg: Sucesoze derestriktis konto di %{username}
+      username: Uzantonomo
+      view_domain: Videz rezumo di domeno
+      warn: Avertez
+      web: Interret
+      whitelisted: Permisesis por federato
+    action_logs:
+      action_types:
+        approve_appeal: Aprobez apelo
+        approve_user: Aprobez uzanto
+        assigned_to_self_report: Taskigez raporto
+        change_email_user: Chanjez retposto por uzanto
+        change_role_user: Chanjez rolo di uzanto
+        confirm_user: Konfirmez uzanto
+        create_account_warning: Kreez averto
+        create_announcement: Kreez anunco
+        create_canonical_email_block: Kreez domenobstrukto
+        create_custom_emoji: Kreez kustumizita emocimajo
+        create_domain_allow: Kreez domenpermiso
+        create_domain_block: Kreez domenobstrukto
+        create_email_domain_block: Kreez retpostodomenobstrukto
+        create_ip_block: Kreez IP-regulo
+        create_unavailable_domain: Kreez nedisponebla domeno
+        create_user_role: Kreez rolo
+        demote_user: Despromocez uzanto
+        destroy_announcement: Efacez anunco
+        destroy_canonical_email_block: Efacez domenobstrukto
+        destroy_custom_emoji: Efacez kustumizita emocimajo
+        destroy_domain_allow: Efacez domenpermiso
+        destroy_domain_block: Efacez domenobstrukto
+        destroy_email_domain_block: Efacez retpostodomenobstrukto
+        destroy_instance: Efacez domeno
+        destroy_ip_block: Efacez IP-regulo
+        destroy_status: Efacez posto
+        destroy_unavailable_domain: Efacez nedisponebla domeno
+        destroy_user_role: Destruktez rolo
+        disable_2fa_user: Desaktivigez 2FA
+        disable_custom_emoji: Desaktivigez kustumizita emocimajo
+        disable_sign_in_token_auth_user: Desaktivigez retpostofichyurizo por uzanto
+        disable_user: Desaktivigez uzanto
+        enable_custom_emoji: Aktivigez kustumizita emocimajo
+        enable_sign_in_token_auth_user: Aktivigez retpostofichyurizo por uzanto
+        enable_user: Aktivigez uzanto
+        memorialize_account: Memorializez konto
+        promote_user: Promocez uzanto
+        reject_appeal: Refuzez apelo
+        reject_user: Refuzez uzanto
+        remove_avatar_user: Efacez profilimajo
+        reopen_report: Riapertez raporto
+        reset_password_user: Richanjez pasvorto
+        resolve_report: Rezolvez raporto
+        sensitive_account: Forcsentoza konto
+        silence_account: Limitizez konto
+        suspend_account: Restriktez konto
+        unassigned_report: Destaskigez raporto
+        unblock_email_account: Deobstruktez retpostoadreso
+        unsensitive_account: Deagez forcsentoza konto
+        unsilence_account: Deagez limitkonto
+        unsuspend_account: Derestriktez konto
+        update_announcement: Novigez anunco
+        update_custom_emoji: Novigez kustumizita emocimajo
+        update_domain_block: Novigez domenobstrukto
+        update_ip_block: Kreez IP-regulo
+        update_status: Novigez posto
+        update_user_role: Novigez rolo
+      actions:
+        approve_appeal_html: "%{name} aprobis jerdecidapelo de %{target}"
+        approve_user_html: "%{name} aprobis registro de %{target}"
+        assigned_to_self_report_html: "%{name} taskigis raporto %{target} a su"
+        change_email_user_html: "%{name} chanjis retpostoadreso di uzanto %{target}"
+        change_role_user_html: "%{name} chanjis rolo di %{target}"
+        confirm_user_html: "%{name} konfirmis retpostoadreso di uzanto %{target}"
+        create_account_warning_html: "%{name} sendis averto a %{target}"
+        create_announcement_html: "%{name} kreis nova anunco %{target}"
+        create_canonical_email_block_html: "%{name} obstruktis retpostodomeno %{target}"
+        create_custom_emoji_html: "%{name} adchargis nova emocimajo %{target}"
+        create_domain_allow_html: "%{name} permisis federato kun domeno %{target}"
+        create_domain_block_html: "%{name} obstruktis domeno %{target}"
+        create_email_domain_block_html: "%{name} obstruktis retpostodomeno %{target}"
+        create_ip_block_html: "%{name} kreis regulo por IP %{target}"
+        create_unavailable_domain_html: "%{name} cesis sendo a domeno %{target}"
+        create_user_role_html: "%{name} kreis rolo di %{target}"
+        demote_user_html: "%{name} despromocis uzanto %{target}"
+        destroy_announcement_html: "%{name} efacis anunco %{target}"
+        destroy_canonical_email_block_html: "%{name} obstruktis retpostodomeno %{target}"
+        destroy_custom_emoji_html: "%{name} efacis emocimajo %{target}"
+        destroy_domain_allow_html: "%{name} despermisis federato kun domeno %{target}"
+        destroy_domain_block_html: "%{name} deobstruktis domeno %{target}"
+        destroy_email_domain_block_html: "%{name} deobstruktis retpostodomeno %{target}"
+        destroy_instance_html: "%{name} efacis domeno %{target}"
+        destroy_ip_block_html: "%{name} efacis regulo por IP %{target}"
+        destroy_status_html: "%{name} efacis posto da %{target}"
+        destroy_unavailable_domain_html: "%{name} durigis sendo a domeno %{target}"
+        destroy_user_role_html: "%{name} efacis rolo di %{target}"
+        disable_2fa_user_html: "%{name} desaktivigis 2-faktorbezono por uzanto %{target}"
+        disable_custom_emoji_html: "%{name} desaktivigis emocimajo %{target}"
+        disable_sign_in_token_auth_user_html: "%{name} desaktivigis retpostofichyurizo por %{target}"
+        disable_user_html: "%{name} desaktivigis eniro por uzanto %{target}"
+        enable_custom_emoji_html: "%{name} aktivigis emocimajo %{target}"
+        enable_sign_in_token_auth_user_html: "%{name} aktivigis retpostofichyurizo por %{target}"
+        enable_user_html: "%{name} aktivigis eniro por uzanto %{target}"
+        memorialize_account_html: "%{name} kauzigis konto di %{target} divenar memorialpagino"
+        promote_user_html: "%{name} promocis uzanto %{target}"
+        reject_appeal_html: "%{name} refuzis jerdecidapelo de %{target}"
+        reject_user_html: "%{name} refuzis registro de %{target}"
+        remove_avatar_user_html: "%{name} efacis profilimajo de %{target}"
+        reopen_report_html: "%{name} riapertis raporto %{target}"
+        reset_password_user_html: "%{name} richanjis pasvorto de uzanto %{target}"
+        resolve_report_html: "%{name} rezolvis raporto %{target}"
+        sensitive_account_html: "%{name} markizis medii di %{target} quale sentoza"
+        silence_account_html: "%{name} limitizis konto di %{target}"
+        suspend_account_html: "%{name} restriktis konto di %{target}"
+        unassigned_report_html: "%{name} detaskigis raporto %{target}"
+        unblock_email_account_html: "%{name} deobstruktis retpostoadreso di %{target}"
+        unsensitive_account_html: "%{name} demarkizis medii di %{target} quale sentoza"
+        unsilence_account_html: "%{name} efacis limito di konto di %{target}"
+        unsuspend_account_html: "%{name} derestriktis konto di %{target}"
+        update_announcement_html: "%{name} novigis anunco %{target}"
+        update_custom_emoji_html: "%{name} novigis emocimajo %{target}"
+        update_domain_block_html: "%{name} novigis domenobstrukto por %{target}"
+        update_ip_block_html: "%{name} kreis regulo por IP %{target}"
+        update_status_html: "%{name} novigis posto da %{target}"
+        update_user_role_html: "%{name} chanjis rolo di %{target}"
+      empty: Nula logi.
+      filter_by_action: Filtrez segun ago
+      filter_by_user: Filtrez segun uzanto
+      title: Kontrollogo
+    announcements:
+      destroyed_msg: Anunco sucesoze efacesas!
+      edit:
+        title: Modifikez anunco
+      empty: Nula anunci.
+      live: Samtempe
+      new:
+        create: Kreez anunco
+        title: Nova anunco
+      publish: Publikigez
+      published_msg: Anunco sucesoze publikigesas!
+      scheduled_for: Projetita por eventas en %{time}
+      scheduled_msg: Anunco projetesis por publikigo!
+      title: Anunci
+      unpublish: Depublikigez
+      unpublished_msg: Anunco sucesoze depublikigesas!
+      updated_msg: Anunco sucesoza novigesas!
+    custom_emojis:
+      assign_category: Insertez kategorio
+      by_domain: Domeno
+      copied_msg: Sucesoze kreis lokala kopiuro di emocimajo
+      copy: Kopiez
+      copy_failed_msg: Ne povas igar lokala kopiur di ta emocimajo
+      create_new_category: Kreez nova kategorio
+      created_msg: Emocimajo sucesoze kreesas!
+      delete: Efacez
+      destroyed_msg: Kustumizita emocimajo sucesoza destruktesas!
+      disable: Desaktivigez
+      disabled: Desaktivigita
+      disabled_msg: Sucesoze desaktivigis ta emocimajo
+      emoji: Emocimajo
+      enable: Aktivigez
+      enabled: Aktivigita
+      enabled_msg: Sucesoze aktivigis ta emocimajo
+      image_hint: Maximo grandeso di PNG o GIF esas %{size}
+      list: Listo
+      listed: Listita
+      new:
+        title: Insertez nova kustumizita emocimajo
+      not_permitted: Vu ne permisesis agar co
+      overwrite: Remplasez
+      shortcode: Kurtkodexo
+      shortcode_hint: Minime 2 simboli, nur literi e nombri e sublinei
+      title: Kustumizita emocimaji
+      uncategorized: Nekategorigita
+      unlist: Delistigez
+      unlisted: Delistigita
+      update_failed_msg: Ne povas novigar ta emocimajo
+      updated_msg: Emocimajo sucesoze novigesis!
+      upload: Adchargez
+    dashboard:
+      active_users: aktiva uzanti
+      interactions: interagi
+      media_storage: Mediireteneso
+      new_users: nova uzanti
+      opened_reports: raporti apertesis
+      pending_appeals_html:
+        one: "<strong>%{count}</strong> vartanta apelo"
+        other: "<strong>%{count}</strong> vartanta apeli"
+      pending_reports_html:
+        one: "<strong>%{count}</strong> vartanta raporto"
+        other: "<strong>%{count}</strong> vartanta raporti"
+      pending_tags_html:
+        one: "<strong>%{count}</strong> vartanta hashtago"
+        other: "<strong>%{count}</strong> vartanta hashtagi"
+      pending_users_html:
+        one: "<strong>%{count}</strong> vartanta uzanti"
+        other: "<strong>%{count}</strong> vartanta uzanti"
+      resolved_reports: raporti rezolvesis
+      software: Softwaro
+      sources: Registrofonti
+      space: Spacuzeso
+      title: Chefpanelo
+      top_languages: Maxim aktiva lingui
+      top_servers: Maxim aktiva servili
+      website: Retsito
+    disputes:
+      appeals:
+        empty: Nula apeli.
+        title: Apeli
+    domain_allows:
+      add_new: Permisez federato kun domeno
+      created_msg: Domeno sucesoza permisesas por federato
+      destroyed_msg: Domeno despermisesas de federato
+      undo: Despermisez federato kun domeno
     domain_blocks:
       add_new: Add new
       new:
@@ -30,30 +375,386 @@ io:
       undo: Undo
     instances:
       title: Known Instances
+      total_blocked_by_us: Obstruktesis da ni
+      total_followed_by_them: Sequesis da oli
+      total_followed_by_us: Sequesis da ni
+      total_reported: Raporti pri oli
+      total_storage: Mediiatachaji
+      totals_time_period_hint_html: Sumi quo montresas sube inkluzas informi de pos la komenco.
+    invites:
+      deactivate_all: Deaktivigez omno
+      filter:
+        all: Omna
+        available: Disponebla
+        expired: Expirita
+        title: Filtrez
+      title: Inviti
+    ip_blocks:
+      add_new: Kreez regulo
+      created_msg: Sucesoze insertis nova regulo di IP
+      delete: Efacez
+      expires_in:
+        '1209600': 2 semani
+        '15778476': 6 monati
+        '2629746': 1 monato
+        '31556952': 1 yaro
+        '86400': 1 dio
+        '94670856': 3 yari
+      new:
+        title: Kreez nova regulo di IP
+      no_ip_block_selected: Reguli di IP nechanjesis por ke nulo selektesis
+      title: Reguli di IP
+    relationships:
+      title: "%{acct} relatesi"
+    relays:
+      add_new: Insertez nova relayo
+      delete: Efacez
+      description_html: "<strong>Federatrelayo</strong> esas mediatajservilo quo interchanjas multa publika posti inter servili quo abonas e publikigas ibe. <strong>Ol povas helpar mikra e mezgranda servili deskovrar kontenajo de fediverso</strong>, quale ne bezonas lokala uzanti manuale sequar altra personi en nelokala servili."
+      disable: Desaktivigez
+      disabled: Desaktivigita
+      enable: Aktivigez
+      enable_hint: Pos aktivigesar, vua servilo abonos omna publika posti de ca relayo, e komencos sendar publika posti di ca servilo a ol.
+      enabled: Aktivigita
+      inbox_url: URL di relayo
+      pending: Vartas aprobo di relayo
+      save_and_enable: Sparez e aktivigez
+      setup: Facez relayokonekto
+      signatures_not_enabled: Relayi ne korekta funcionos dum ke sekurmodo o limigita federatmodo aktivigesis
+      status: Stando
+      title: Relayi
+    report_notes:
+      created_msg: Raportnoto sucesoze kreesis!
+      destroyed_msg: Raportnoto sucesoze efacesis!
+      today_at: Hodie en %{time}
+    reports:
+      account:
+        notes:
+          one: "%{count} noto"
+          other: "%{count} noti"
+      action_log: Kontrollogo
+      action_taken_by: Agesis da
+      actions:
+        delete_description_html: Raportizita posti efacesos e streko rekordigesos por helpar vu intensigar en nexta malagi da la sama konto.
+        mark_as_sensitive_description_html: Medii en raportizita posti markizesos quale sentoza e streko rekordigesos por helpar vu intensigar en nexta malagi da la sama konto.
+        other_description_html: Videz plu multa opcioni por dominacar konduto di konto e kustumizar komuniko a raportizita konto.
+        resolve_description_html: Nulo agesos kontre raportizita konto, streko ne rekordizesos e raporto klozesos.
+        silence_description_html: Profilo esos videbla nur por personi quo ja sequis o manuale trovis, se severe limitizas ola porteo. Sempre povas inversigesar.
+        suspend_description_html: Ca profilo e omna ola kontenaji divenos neacesebla til ol eventuale efacesas. Interagar kun la konto divenos neposibla. Inversigebla til 30 dii.
+      actions_description_html: Decidez ago por rezolvar ca raporto. Se vu decidar puniso kontre raportizesis konto, retpostoavizo sendesos a ol, ecepte kande <strong>Spam</strong> kategorio selektesis.
+      add_to_report: Insertez pluse a raporto
+      are_you_sure: Ka vu esas certa?
+      assign_to_self: Taskigez me
+      assigned: Taskigita jerero
+      by_target_domain: Domeno di raportizita konto
+      category: Kategorio
+      category_description_html: La motivo ke ca konto e kontenajo raportizesis citesos por komuniko kun raportizita konto
+      comment:
+        none: Nulo
+      comment_description_html: 'Por donar plu multa informo, %{name} skribis:'
+      created_at: Raportizesis
+      delete_and_resolve: Efacez posti
+      forwarded: Sendesis
+      forwarded_to: Sendesis a %{domain}
+      mark_as_resolved: Markizez quale rezolvita
+      mark_as_sensitive: Markizez quale sentoza
+      mark_as_unresolved: Markizez quale nerezolvita
+      no_one_assigned: Nulu
+      notes:
+        create: Insertez noto
+        create_and_resolve: Rezolvez per noto
+        create_and_unresolve: Riapertez per noto
+        delete: Efacez
+        placeholder: Deskriptez quo agesis o irga relatita novaji...
+        title: Noti
+      notes_description_html: Videz e pozez noti a altra jereri e vua su en futuro
+      quick_actions_description_html: 'Agetez o volvez base por vidar raportizita kontenajo:'
+      remote_user_placeholder: nelokala uzanti de %{instance}
+      reopen: Riapertez raporto
+      report: 'Raporto #%{id}'
+      reported_account: Raportizita konto
+      reported_by: Raportizesis da
+      resolved: Rezolvesis
+      resolved_msg: Raporto sucesoze rezolvesis!
+      skip_to_actions: Saltez a agi
+      status: Stando
+      statuses: Raportizita kontenajo
+      statuses_description_html: Ofensanta kontenajo citesos en komuniko kun raportizita konto
+      target_origin: Fonto di raportizita konto
+      title: Raporti
+      unassign: Detaskigez
+      unresolved: Nerezolvita
+      updated_at: Novigesis
+      view_profile: Videz profilo
+    roles:
+      add_new: Insertez rolo
+      assigned_users:
+        one: "%{count} uzanto"
+        other: "%{count} uzanti"
+      categories:
+        administration: Administro
+        devops: Developeri
+        invites: Inviti
+        moderation: Jero
+        special: Specala
+      delete: Efacez
+      description_html: Per <strong>uzantoroli</strong>, vu povas kustumizar funciono e siti di Mastodon quon vua uzanti povas uzar.
+      edit: Modifikez rolo di '%{name}'
+      everyone: Originala permisi
+      everyone_full_description_html: Co esas <strong>bazrolo</strong> quo efektigas <strong>omna uzanti</strong>, mem personi sen rolo. Omna altra roli ganas sama permisi de ol.
+      permissions_count:
+        one: "%{count} permiso"
+        other: "%{count} permisi"
+      privileges:
+        administrator: Administrero
+        administrator_description: Uzanti kun ca permiso ignoros singla permiso
+        delete_user_data: Efacez uzantinformi
+        delete_user_data_description: Permisez uzanti efacar informi di altra uzanti sen varto
+        invite_users: Invitez uzanti
+        invite_users_description: Permisez uzanti invitar nova personi a la servilo
+        manage_announcements: Jerez anunci
+        manage_announcements_description: Permisez uzanti jerar anunci en la servilo
+        manage_appeals: Jerez apeli
+        manage_appeals_description: Permisez uzanti kontrolar apeli kontra jero
+        manage_blocks: Jerez obstrukti
+        manage_blocks_description: Permisez uzanti obstruktar retpostoservilo e adresi di IP
+        manage_custom_emojis: Jerez kustumizita emocimaji
+        manage_custom_emojis_description: Permisez uzanti jerar kustumizita emocimaji en la servilo
+        manage_federation: Jerez federo
+        manage_federation_description: Permisez uzanti obstruktar o permisez federo kun altra domeni, e dominacar sendebleso
+        manage_invites: Jerez inviti
+        manage_invites_description: Permisez uzanti vidar e desaktivigar invitligili
+        manage_reports: Jerez raporti
+        manage_reports_description: Permisez uzanti kontrolar raporti e jerez kontra oli
+        manage_roles: Jerez roli
+        manage_roles_description: Permisez uzanti jerar e ajustar plu basa roli di olia
+        manage_rules: Jerez reguli
+        manage_rules_description: Permisez uzanti chanjar servilreguli
+        manage_settings: Jerez opcioni
+        manage_settings_description: Permisez uzanti chanjar sitopcioni
+        manage_taxonomies: Jerez nomkategorii
+        manage_taxonomies_description: Permisez uzanti kontrolar tendencoza kontenajo e novigar hashtagopcioni
+        manage_user_access: Jerez uzantoeniro
+        manage_user_access_description: Permisez uzanti desaktivigar 2-faktoryurizeso di altra uzanti, chanjar olia retpostoadreso e richanjar olia pasvorto
+        manage_users: Jerez uzanti
+        manage_users_description: Permisez uzanti vidar detali di altra uzanti e jerar kontra oli
+        manage_webhooks: Jerez interrethoki
+        manage_webhooks_description: Permisez uzanti igas interrethoki por administrala eventi
+        view_audit_log: Videz kontrollogo
+        view_audit_log_description: Permisez uzanti vidar historio di administrala agi en la servilo
+        view_dashboard: Videz chefpanelo
+        view_dashboard_description: Permisez uzanti uzar chefpanelo e diversa opcioni
+        view_devops: Developeri
+        view_devops_description: Permisez uzanti uzar chefpaneli Sidekiq e pgHero
+      title: Roli
+    rules:
+      add_new: Insertez regulo
+      delete: Efacez
+      description_html: Quankam maxim multa personi asertar ke lu ja lektis e konsentis serveskondicioni, frequente personi ne komplete lektas til problemo eventas. <strong>Faciligez on vidar vua reguli di servilo kurte per pozar puntostrukturlisto.</strong> Lasez singla reguli esar kurta e simpla, ma ne fendez a multa separata kozi anke.
+      edit: Modifikez regulo
+      empty: Nula servilreguli fixesis til nun.
+      title: Servilreguli
     settings:
       contact_information:
         email: Enter a public e-mail address
         username: Enter a username
+      custom_css:
+        desc_html: Modifikez aspekto kun CSS chargasas che singla pagino
+        title: Kustumizita CSS
+      default_noindex:
+        desc_html: Efektigar omna uzanti quo ne chanjis ca opciono per su
+        title: Despartoprenigez uzanti de trovmotorindexo quale originala stando
+      domain_blocks:
+        all: A omnu
+        disabled: A nulu
+        title: Montrez domenobstrukti
+        users: A enirinta lokala uzanti
+      domain_blocks_rationale:
+        title: Montrez motivo
+      mascot:
+        desc_html: Montresas che multa chefpagino. Minime 293x205px rekomendesas. Se ne fixesis, ol retrouzas reprezentanto
+        title: Reprezenterimajo
+      peers_api_enabled:
+        desc_html: Domennomo quon ca servilo renkontris en fediverso
+        title: Publikigez listo di deskovrita servili en API
+      preview_sensitive_media:
+        desc_html: Ligilprevidi che altra retsiti montros imajeto mem se medii markizesas quale sentoza
+        title: Montrez sentoza medii e OpenGraph previdi
+      profile_directory:
+        desc_html: Permisez uzanti deskovresar
+        title: Aktivigez profilcheflisto
       registrations:
         closed_message:
           desc_html: Displayed on frontpage when registrations are closed<br>You can use HTML tags
+          title: Mesajo di klozita registro
+        require_invite_text:
+          desc_html: Se registri bezonas manuala aprobo, kauzigar "Por quo vu volas juntar?" textoenpoz divenar obligata
+          title: Bezonez nova uzanti insertar motivo por juntar
+      registrations_mode:
+        modes:
+          approved: Aprobo bezonesas por registro
+          none: Nulu povas registrar
+          open: Irgu povas registrar
+        title: Registromodo
       site_description:
         desc_html: Displayed as a paragraph on the frontpage and used as a meta tag.<br>You can use HTML tags, in particular <code>&lt;a&gt;</code> and <code>&lt;em&gt;</code>.
         title: Site description
       site_description_extended:
         desc_html: Displayed on extended information page<br>You can use HTML tags
         title: Extended site description
+      site_short_description:
+        desc_html: Montresas en flankobaro e metatagi. Deskriptez Mastodon e por quo ca servilo esas specala per 1 paragrafo.
+        title: Kurta servildeskripto
+      site_terms:
+        desc_html: Vu povas adjuntar sua privatesguidilo. Vu povas uzar tagi di HTML
+        title: Kustumizita privatesguidilo
       site_title: Site title
       title: Site Settings
+      trendable_by_default:
+        desc_html: Partikulara trendoza kontenajo povas ankore videbla nepermisesar
+        title: Permisez hashtagi divenies tendencoza sen bezonata kontrolo
+      trends:
+        desc_html: Publika montrez antee kontrolita kontenajo quo nun esas tendencoza
+        title: Tendenci
+    site_uploads:
+      delete: Efacez adchargita failo
+      destroyed_msg: Sitadchargito sucesoze efacesis!
+    statuses:
+      back_to_account: Retrovenez a kontopagino
+      back_to_report: Retrovenez a raportpagino
+      batch:
+        remove_from_report: Efacez de raporto
+        report: Raportizez
+      deleted: Efacesis
+      media:
+        title: Medii
+      no_status_selected: Nula posti chanjesis pro ke nulo selektesis
+      title: Kontoposti
+      with_media: Kun medii
+    strikes:
+      actions:
+        delete_statuses: "%{name} efacis posti di %{target}"
+        disable: "%{name} frostigis konto di %{target}"
+        mark_statuses_as_sensitive: "%{name} markizis posti di %{target} quale sentoza"
+        none: "%{name} sendis averto a %{target}"
+        sensitive: "%{name} markizis konto di %{target} quale sentoza"
+        silence: "%{name} limitizis konto di %{target}"
+        suspend: "%{name} restriktis konto di %{target}"
+      appeal_approved: Apelis
+      appeal_pending: Vartata apelo
+    system_checks:
+      database_schema_check:
+        message_html: Existas vartanta datamaturmigri. Startez por certigar ke la softwaro kondutar quale expektita
+      elasticsearch_running_check:
+        message_html: Ne povas konektas a Elasticsearch. Kontrolez ke ol functionas o desaktivigez textokompleta trovo
+      elasticsearch_version_check:
+        message_html: 'Nekonciliebla versiono di Elasticsearch: %{value}'
+        version_comparison: Elasticsearch %{running_version} funcionas ma %{required_version} bezonesas
+      rules_check:
+        action: Jerez servilreguli
+        message_html: Vu ne fixis irga servilreguli.
+      sidekiq_process_check:
+        message_html: Sidekiq procedo ne funcionas ye %{value} fask(o). Kontrolez vua opciono di Sidekiq
+    tags:
+      review: Kontrolez stando
+      updated_msg: Hashtagopcioni novigesis sucesoze
+    title: Administro
     trends:
       only_allowed: Nur permisato
       trending: Tendenco
+    warning_presets:
+      add_new: Insertez novo
+      delete: Efacez
+      edit_preset: Modifikez avertfixito
+      empty: Vu ne fixis irga avertfixito til nun.
+      title: Jerez avertfixiti
+    webhooks:
+      add_new: Insertez finpunto
+      delete: Efacez
+      description_html: "<strong>Rethoko</strong> povigas Mastodon sendar <strong>samtempoavizi</strong> pri selektita eventi a vua sua apliko, por ke vua apliko povas <strong>automate kauzigar reakti</strong>."
+      disable: Desaktivigez
+      disabled: Desaktivigita
+      edit: Modifikez finpunto
+      empty: Vu ne havas irga ajustita finpunti ankore.
+      enable: Aktivigez
+      enabled: Aktiva
+      enabled_events:
+        one: 1 aktivigita evento
+        other: "%{count} aktivigita eventi"
+      events: Eventi
+      new: Nova rethoko
+      rotate_secret: Rotacigez sekreto
+      secret: Signosekreto
+      status: Stando
+      title: Rethoki
+      webhook: Rethok
+  admin_mailer:
+    new_appeal:
+      actions:
+        delete_statuses: efacos ola posti
+        disable: frostigar olia konto
+        mark_statuses_as_sensitive: markizos ola posti quale sentoza
+        none: averto
+        sensitive: markizos ola konto quale sentoza
+        silence: limitizos ola konto
+        suspend: restriktos ola konto
+      body: "%{target} apelas jerdecido da %{action_taken_by} de %{date}, quale esis %{type}. Oli skribis:"
+      next_steps: Vu povas aprobar apelo por deagar jerdecido o ignorar.
+      subject: "%{username} apela jerdecido che %{instance}"
+    new_pending_account:
+      body: Detali de nova konto esas la subo. Vu povas aprobar o refuzar ca apliko.
+      subject: Nova konto bezonas kontrolesar che %{instance} (%{username})
+    new_report:
+      body: "%{reporter} raportizis %{target}"
+      body_remote: Ulu de %{domain} raportizis %{target}
+      subject: Nova raporto por %{instance} (#%{id})
+    new_trends:
+      body: 'Ca kozi bezonas kontrol ante ol povas montresar publike:'
+      new_trending_links:
+        title: Tendencoza ligili
+      new_trending_statuses:
+        title: Tendencoza posti
+      new_trending_tags:
+        no_approved_tags: Nun ne existas aprobita tendencoza hashtagi.
+        requirements: 'Irga ca probanti povas ecesar la #%{rank} aprobita tendencoligilo, quale nun esas %{lowest_tag_name} kun punto %{lowest_tag_score}.'
+        title: Tendencoza hashtagi
+      subject: Nova tendenci bezonas kontrolesar che %{instance}
+  aliases:
+    add_new: Kreez alternativa nomo
+    created_msg: Sucesoze kreis nova alternativa nomo. Vu povas nun komencar transfero de la olda konto.
+    deleted_msg: Sucesoze efacis alternativa nomo. Transferar de ta konto a co ne esos posibla.
+    empty: Vu ne havas alternativa nomi.
+    hint_html: Se vu volas transferesar de altra konto a co, hike vu povas krear alternativnomo, quo bezonesas ante vu povas durigar transferar sequanti de la olda konto a co. Ca ago esas <strong>nedanjeroza e inversigebla</strong>. <strong>Kontomigro komencesas de la olda konto</strong>.
+    remove: Deligez alternative nomo
+  appearance:
+    advanced_web_interface: Avancata retintervizajo
+    advanced_web_interface_hint: 'Se vu volas uzar tota skrenlongeso, avancata retintervizajo povigas vu modifikar multa diferanta kolumni por vida multa informi en sama tempo quon vu volas: Hemo, avizi, federatata tempolineo, multa listi e hashtagi.'
+    animations_and_accessibility: Animacii e aceseso
+    confirmation_dialogs: Konfirmdialogi
+    discovery: Deskovro
+    localization:
+      body: Mastodon tradukesas da voluntarii.
+      guide_link: https://crowdin.com/project/mastodon
+      guide_link_text: Omnu povas kontributar.
+    sensitive_content: Sentoza kontenajo
+    toot_layout: Postostrukturo
   application_mailer:
     settings: 'Chanjar la retpost-mesajala preferi: %{link}'
     view: 'Vidar:'
   applications:
-    invalid_url: La URL donita ne esas valida
+    created: Apliko sucesoze kreesas
+    destroyed: Apliko sucesoze efacesas
+    regenerate_token: Rifacez acesficho
+    token_regenerated: Acesficho sucesoze riganesas
+    warning: Sorgemez per ca informi. Ne partigez kun irgu!
+    your_token: Vua acesficho
   auth:
+    change_password: Pasvorto
+    delete_account: Efacez konto
+    delete_account_html: Se vu volas efacar vua konto, vu povas <a href="%{path}">irar hike</a>. Vu demandesos konfirmar.
+    description:
+      prefix_invited_by_user: "@%{name} invitas vu juntar ca servilo di Mastodon!"
+      prefix_sign_up: Registrez che Mastodon hodie!
+      suffix: Per konto, vu povos sequar personi, postigar novaji e interchanjar mesaji kun uzanti de irga servilo di Mastodon e pluse!
     didnt_get_confirmation: Ka tu ne recevis la instrucioni por konfirmar?
     forgot_password: Pasvorto obliviita?
     login: Enirar
@@ -63,6 +764,19 @@ io:
     reset_password: Chanjar la pasvorto
     security: Chanjar pasvorto
     set_new_password: Selektar nova pasvorto
+    setup:
+      email_below_hint_html: Se suba retpostoadreso esas nekorekta, vu povas chanjar hike e ganar nova konfirmretposto.
+      email_settings_hint_html: Konfirmretposto sendesis a %{email}. Se ta retpostoadreso ne esas korekta, vu povas chanjar en kontoopcioni.
+      title: Komencoprocedo
+    status:
+      account_status: Kontostando
+      confirming: Vartas retpostokonfirmo finar.
+      functional: Vua konto esas tote funcionoza.
+      pending: Vua apliko bezonas kontrolo da nia laborero. Co forsan esas nekurta. Vu ganos retposto se vua apliko aprobesas.
+      redirecting_to: Vua konto esas neaktiva pro ke ol nun ridirektesos a %{acct}.
+      view_strikes: Videz antea streki kontre vua konto
+    too_fast: Formulario sendesis tro rapide, probez itere.
+    use_security_key: Uzes sekuresklefo
   authorize_follow:
     error: Regretinde, eventis eraro probante konsultar la fora konto
     follow: Sequar
@@ -71,6 +785,28 @@ io:
     distance_in_words:
       half_a_minute: Jus
       less_than_x_seconds: Jus
+      over_x_years: "%{count}y"
+      x_days: "%{count}d"
+      x_minutes: "%{count}m"
+      x_months: "%{count}mo"
+      x_seconds: "%{count}s"
+  deletes:
+    challenge_not_passed: Informo quon vu insertis ne esas korekta
+    confirm_password: Insertez nuna pasvorto por verifikar vua identeso
+    confirm_username: Insertez vua uzantonomo por konfirmar procedo
+    proceed: Efacez konto
+    success_msg: Vua konto sucesoze efacesis
+    warning:
+      before: 'Ante durar, lektez ca noti sorgeme:'
+      caches: Kontenajo quo memoresis da altra servilo forsan restas
+      data_removal: Vua posti e altra informi netempale efacesis
+      email_change_html: Vu povas <a href="%{path}">chanjar vua retpostoadreso</a> sen efacar vua konto
+      email_contact_html: Se ol ankore ne venas, vu povas retpostigar a <a href="mailto:%{email}">%{email}</a> por ganar helpo
+      email_reconfirmation_html: Se vu ne ganas konfirmretposto, vu povas <a href="%{path}">demandar itere</a>
+      irreversible: Vu ne povos riganar o riaktivigar vua konto
+      more_details_html: Por plu multa detali, videz <a href="%{terms_path}">privatesguidilo</a>.
+      username_available: Vua uzantonomo divenos disponebla itere
+      username_unavailable: Vua uzantonomo restos nedisponebla
   disputes:
     strikes:
       approve_appeal: Aprobez rikonsidero
@@ -81,16 +817,84 @@ io:
     '404': La pagino quan tu serchas ne existas.
     '406': This page is not available in the requested format.
     '410': La pagino quan tu serchas ne plus existas.
-    '422': 
+    '422':
     '429': Too many requests
-    '500': 
+    '500':
     '503': The page could not be served due to a temporary server failure.
   exports:
     blocks: Tu blokusas
     storage: Konservado di kontenajo
+  featured_tags:
+    add_new: Insertez novo
+    errors:
+      limit: Vu ja estelis maxima hashtagi
+    hint_html: "<strong>Quo esas estelita hashtagi?</strong> Ol montresas eminente che vua publika profilo e povigas personi vidar vua publika posti partikulare kun ta hashtagi. Oli esas bona utensilo por jeretar kreiva agaji e longa projetaji."
+  filters:
+    contexts:
+      account: Profili
+      home: Hemo e listi
+      notifications: Avizi
+      public: Publika tempolinei
+      thread: Konversi
+    edit:
+      add_keyword: Insertez klefvorto
+      keywords: Klefvorti
+      statuses: Individuala posti
+      statuses_hint_html: Ca filtrilo aplikesas a selektita posti ne segun kad oli parigesas kun basa klefvorti. <a href="%{path}">Kontrolez o efacez posti de la filtrilo</a>.
+      title: Modifikez filtrilo
+    errors:
+      deprecated_api_multiple_keywords: Ca parametri ne povas chanjesar per ca softwaro pro quo oli efektigas plu kam 1 filtrilklefvorto. Uzez plu recenta softwaro o interretintervizajo.
+      invalid_context: Nula o nevalida kuntexto donesis
+    index:
+      contexts: Filtrili kun %{contexts}
+      delete: Efacez
+      empty: Vu ne havas filtrili.
+      expires_in: Expiras ye %{distance}
+      expires_on: Expiras ye %{date}
+      keywords:
+        one: "%{count} klefvorto"
+        other: "%{count} klefvorti"
+      statuses:
+        one: "%{count} posto"
+        other: "%{count} posti"
+      statuses_long:
+        one: "%{count} posto celesas"
+        other: "%{count} posti celesas"
+      title: Filtrili
+    new:
+      save: Salvez nova filtrilo
+      title: Insertez nova filtrilo
+    statuses:
+      back_to_filter: Retrovenez a filtrilo
+      batch:
+        remove: Efacez de filtrilo
+      index:
+        hint: Ca filtrilo aplikesas a selektita posti ne segun altra kriterio. Vu povas pozar plu multa posti a ca filtrilo de retintervizajo.
+        title: Filtrita posti
+  footer:
+    developers: Developeri
+    more: Pluse…
+    resources: Moyeni
+    trending_now: Nuna tendenco
   generic:
+    all: Omna
+    all_items_on_page_selected_html:
+      one: "<strong>%{count}</strong> kozo sur ca sito selektesas."
+      other: Omna <strong>%{count}</strong> kozi sur ca sito selektesas.
+    all_matching_items_selected_html:
+      one: "<strong>%{count}</strong> kozo quo parigesas kun vua trovato selektesas."
+      other: Omna <strong>%{count}</strong> kozi quo parigesas kun vua trovato selektesas.
     changes_saved_msg: Chanji senprobleme konservita!
+    copy: Kopiez
+    delete: Efacez
+    deselect: Deselektez omno
+    none: Nulo
+    order_by: Asortez quale
     save_changes: Konservar la chanji
+    select_all_matching_items:
+      one: Selektez %{count} kozo quo parigesas kun vua trovato.
+      other: Selektez omna %{count} kozi quo parigesas kun vua trovato.
+    today: hodie
     validation_errors:
       one: Ulo ne eventis senprobleme! Voluntez konsultar la suba eror-raporto
       other: Ulo ne eventis senprobleme! Voluntez konsultar la suba %{count} eror-raporti
@@ -102,12 +906,11 @@ io:
       following: Listo de sequati
     upload: Kargar
   notification_mailer:
-    digest:
-      body: Yen mikra rezumo di to, depos ke tu laste vizitis en %{since}
-      mention: "%{name} mencionis tu en:"
-      new_followers_summary:
-        one: Tu obtenis nova sequanto! Yey!
-        other: Tu obtenis %{count} nova sequanti! Astonive!
+    admin:
+      report:
+        subject: "%{name} sendis raporto"
+      sign_up:
+        subject: "%{name} registris"
     favourite:
       body: "%{name} favoris tua mesajo:"
       subject: "%{name} favoris tua mesajo"
@@ -158,9 +961,81 @@ io:
   strikes:
     errors:
       too_late: Ol esas tro tarda ye apelar ca strekizo
+  tags:
+    does_not_match_previous_name: ne parigesas a antea nomo
+  themes:
+    contrast: Mastodon (Alta kontrasteso)
+    default: Mastodon (Obskura)
+    mastodon-light: Mastodon (Brila)
+  time:
+    formats:
+      default: "%d %b, %Y, %H:%M"
+      month: "%b %Y"
+      time: "%H:%M"
   two_factor_authentication:
     disable: Extingar
     generate_recovery_codes: Generate Recovery Codes
     recovery_instructions_html: If you ever lose access to your phone, you can use one of the recovery codes below to regain access to your account. Keep the recovery codes safe, for example by printing them and storing them with other important documents.
+    webauthn: Sekuresklefi
+  user_mailer:
+    appeal_approved:
+      action: Irez a vua konto
+      explanation: Apelo di streko kontre vua konto en %{strike_date} quale vu sendis en %{appeal_date} aprobesis. Vua konto itere standas bone.
+      subject: Vua apelo de %{date} aprobesis
+      title: Apelo aprobesis
+    appeal_rejected:
+      explanation: Apelo di streko kontre vua konto en %{strike_date} quale vu sendis en %{appeal_date} refuzesis.
+      subject: Vua apelo de %{date} refuzesis
+      title: Apelo refuzesis
+    backup_ready:
+      explanation: Vu demandis kompleta kopiur di vua konto di Mastodon. Ol esas nun pronte deschargebla!
+      subject: Vua arkivo pronte deschargebla
+      title: Arkivekpreno
+    suspicious_sign_in:
+      change_password: chanjez vua pasvorto
+      details: 'Co esas detali di eniro:'
+      explanation: Ni deskovris eniro a vua konto de nova adreso IP.
+      further_actions_html: Se co ne agesis da vu, ni rekomendas ke vu %{action} quik e aktivigas 2-faktoryurizo por sekurigar vua konto.
+      subject: Vua konto acesesis de nova adreso IP
+      title: Nova eniro
+    warning:
+      appeal: Sendez apelo
+      appeal_description: Se vu kredas ke co esas eroro, vu povas sendar apelo a laboreri di %{instance}.
+      categories:
+        spam: Spamo
+        violation: Kontenajo nesequas ca komunitatguidili
+      explanation:
+        delete_statuses: Ol trovesis ke kelka vua posti nesequas komunitatguidilo e do efacesis da jereri di %{instance}.
+        disable: Vu ne povas uzar vua konto pluse, ma vua profilo e altra informi restas bone. Vu povas demandar kopiur di vua informi, chanjar kontoopcioni e efacar vua konto.
+        mark_statuses_as_sensitive: Kelka vua posti markizesis quale sentoza da jereri di %{instance}. Do, personi bezonos kliktar medii en posti ante prevido montresas. Vu povas markizar medii quale sentoza per su kande postar en futuro.
+        sensitive: Pos co, omna vua adchargita mediifaili markizesos quale sentoza e celesos dop kliktoaverto.
+        silence: Vu povas ankore uzar vua konto ma nur personi quo ja sequis vu vidos vua posti en ca servilo, e vu forsan neinkluzesas de diversa deskovrotraiti. Tamen, altra personi povas ankore manuala sequar vu.
+        suspend: Vu ne povas uzar vua konto pluse, e vua profilo e altra informi ne esas acesebla pluse. Vu povas ankore enirar por demandar kopiur di vua informi til informi komplete efacesas pos cirkum 30 dii, ma ni retenos kelka bazala informi por preventar vu evitar restrikto.
+      reason: 'Motivo:'
+      statuses: 'Citita posti:'
+      subject:
+        delete_statuses: Vua posti che %{acct} efacis
+        disable: Vua konto %{acct} frostigesis
+        mark_statuses_as_sensitive: Vua posti che %{acct} markizesis quale sentoza
+        none: Averto por %{acct}
+        sensitive: Vua posti che %{acct} markizesos quale sentoza pos nun
+        silence: Vua konto %{acct} limitizesis
+        suspend: Vua konto %{acct} restriktesis
+      title:
+        delete_statuses: Posti efacesis
+        disable: Konto frostigesis
+        mark_statuses_as_sensitive: Posti markizesis quale sentoza
+        none: Averto
+        sensitive: Konto markizesis quale sentoza
+        silence: Konto limitizesis
+        suspend: Konto restriktigesis
+    welcome:
+      edit_profile_action: Facez profilo
+      explanation: Subo esas guidilo por helpar vu komencar
+      final_action: Komencez postigar
+      full_handle: Vua kompleta profilnomo
+      full_handle_hint: Co esas quon vu dicos a amiki por ke oli povas mesajigar o sequar vu de altra servilo.
+      subject: Bonveno a Mastodon
+      title: Bonveno, %{name}!
   users:
     invalid_otp_token: La dufaktora autentikigila kodexo ne esas valida
