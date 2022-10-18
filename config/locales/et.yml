@@ -31,10 +31,10 @@ et:
     pin_errors:
       following: Te peate juba olema selle kasutaja jälgija, keda te heaks kiidate
     posts:
-      one: Tuututus
-      other: Tuututused
-    posts_tab_heading: Tuututused
-    posts_with_replies: Tuututused ja vastused
+      one: Postitus
+      other: Postitused
+    posts_tab_heading: Postitused
+    posts_with_replies: Postitused ja vastused
     roles:
       bot: Robot
       group: Grupp

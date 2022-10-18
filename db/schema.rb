@@ -1099,6 +1099,16 @@ ActiveRecord::Schema.define(version: 2022_10_12_181003) do
     t.index ["user_id"], name: "index_webauthn_credentials_on_user_id"
   end
 
+  create_table "webhooks", force: :cascade do |t|
+    t.string "url", null: false
+    t.string "events", default: [], null: false, array: true
+    t.string "secret", default: "", null: false
+    t.boolean "enabled", default: true, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["url"], name: "index_webhooks_on_url", unique: true
+  end
+
   add_foreign_key "account_aliases", "accounts", on_delete: :cascade
   add_foreign_key "account_conversations", "accounts", on_delete: :cascade
   add_foreign_key "account_conversations", "conversations", on_delete: :cascade

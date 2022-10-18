@@ -16,8 +16,7 @@
     justify-content: center;
     align-items: center;
 
-    svg {
-      fill: $primary-text-color;
+    .logo {
       height: 42px;
       margin-right: 10px;
     }
@@ -315,7 +314,7 @@
       display: block;
       padding: 15px;
 
-      svg {
+      .logo {
         display: block;
         height: 18px;
         width: auto;
