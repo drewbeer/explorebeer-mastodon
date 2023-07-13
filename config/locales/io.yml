@@ -2,46 +2,26 @@
 io:
   about:
     about_mastodon_html: Mastodon esas <em>gratuita, apertitkodexa</em> sociala reto. Ol esas <em>sencentra</em> altra alternativo a komercala servadi. Ol evitigas, ke sola firmo guvernez tua tota komunikadol. Selektez servero, quan tu fidas. Irge qua esas tua selekto, tu povas komunikar kun omna altra uzeri. Irgu povas krear sua propra instaluro di Mastodon en sua servero, e partoprenar en la <em>sociala reto</em> tote glate.
-    api: API
-    apps: Smartfonsoftwari
     contact_missing: Ne fixigita
     contact_unavailable: Nula
-    documentation: Dokumentajo
     hosted_on: Mastodon hostigesas che %{domain}
-    privacy_policy: Privatesguidilo
-    source_code: Fontkodexo
-    what_is_mastodon: Quo esas Mastodon?
+    title: Pri co
   accounts:
-    choices_html: 'Selektaji di %{name}:'
-    endorsements_hint: Vu povas rekomendar personi quon vu sequas de retintervizajo, e oli montresos hike.
-    featured_tags_hint: Vu povas estalar partikulara hashtagi quo montresos hike.
     follow: Sequar
     followers:
       one: Sequanto
       other: Sequanti
     following: Sequati
     instance_actor_flash: Ca konto esas virtuala aganto quo uzesas por reprezentar la servilo e ne irga individuala uzanto. Ol uzesas por federskopo e ne debas restriktesar.
-    joined: Juntis ye %{date}
     last_active: lasta aktiva tempo
     link_verified_on: Proprieteso di ca ligilo kontrolesis ye %{date}
-    media: Medii
-    moved_html: "%{name} transferesis a %{new_profile_link}:"
-    network_hidden: Ca informi ne esas disponebla
     nothing_here: Esas nulo hike!
-    people_followed_by: Sequati da %{name}
-    people_who_follow: Sequanti di %{name}
     pin_errors:
       following: Vu mustas ja sequar persono quon vu volas estalar
     posts:
       one: Posto
       other: Posti
     posts_tab_heading: Posti
-    posts_with_replies: Posti e respondi
-    roles:
-      bot: Boto
-      group: Grupo
-    unavailable: Profilo esas nedisponebla
-    unfollow: Dessequar
   admin:
     account_actions:
       action: Agez
@@ -142,8 +122,6 @@ io:
       removed_header_msg: Sucesoze efacis kapimajo di %{username}
       resend_confirmation:
         already_confirmed: Ca uzanto ja konfirmesis
-        send: Risendez konfirmretposto
-        success: Konfirmretposto sucesoze sendesas!
       reset: Richanjez
       reset_password: Richanjez pasvorto
       resubscribe: Riabonez
@@ -344,6 +322,7 @@ io:
       listed: Listita
       new:
         title: Insertez nova kustumizita emocimajo
+      no_emoji_selected: Nula emocimaji chanjesis pro ke nulo selektesis
       not_permitted: Vu ne permisesis agar co
       overwrite: Remplasez
       shortcode: Kurtkodexo
@@ -389,6 +368,8 @@ io:
       add_new: Permisez federato kun domeno
       created_msg: Domeno sucesoza permisesas por federato
       destroyed_msg: Domeno despermisesas de federato
+      export: Exportez
+      import: Importez
       undo: Despermisez federato kun domeno
     domain_blocks:
       add_new: Add new
@@ -398,15 +379,18 @@ io:
       edit: Modifikez domenobstrukto
       existing_domain_block: Vu ja exekutis plu rigoroza limiti a %{name}.
       existing_domain_block_html: Vu ja povis plu rigoroza limiti a %{name}, vu bezonas <a href="%{unblock_url}">deobstruktar</a> unesme.
+      export: Exportez
+      import: Importez
       new:
         create: Kreez obstrukto
         hint: Domenobstrukto ne preventos kreo di kontrekordaji en datumaturo, ma retroaktive e automate aplikos partikulara jermetodi a ta konti.
         severity:
-          desc_html: "<strong>Silence</strong> will make the account's posts invisible to anyone who isn't following them. <strong>Suspend</strong> will remove all of the account's content, media, and profile data."
           noop: Nulo
-          silence: Silencigez
+          silence: Limito
           suspend: Restriktez
         title: Nova domenobstrukto
+      no_domain_block_selected: Nula domenobstrukti ne chanjesis por ke nulo selektesis
+      not_permitted: Vu ne permisesis agar co
       obfuscate: Nedicernebligez domennomo
       obfuscate_hint: Partala nedicernebligez domennomo en listo se reklamo di listo di domenlimito aktivigesas
       private_comment: Privata komento
@@ -557,7 +541,6 @@ io:
     report_notes:
       created_msg: Raportnoto sucesoze kreesis!
       destroyed_msg: Raportnoto sucesoze efacesis!
-      today_at: Hodie en %{time}
     reports:
       account:
         notes:
@@ -570,8 +553,6 @@ io:
         mark_as_sensitive_description_html: Medii en raportizita posti markizesos quale sentoza e streko rekordigesos por helpar vu intensigar en nexta malagi da la sama konto.
         other_description_html: Videz plu multa opcioni por dominacar konduto di konto e kustumizar komuniko a raportizita konto.
         resolve_description_html: Nulo agesos kontre raportizita konto, streko ne rekordizesos e raporto klozesos.
-        silence_description_html: Profilo esos videbla nur por personi quo ja sequis o manuale trovis, se severe limitizas ola porteo. Sempre povas inversigesar.
-        suspend_description_html: Ca profilo e omna ola kontenaji divenos neacesebla til ol eventuale efacesas. Interagar kun la konto divenos neposibla. Inversigebla til 30 dii.
       actions_description_html: Decidez ago por rezolvar ca raporto. Se vu decidar puniso kontre raportizesis konto, retpostoavizo sendesos a ol, ecepte kande <strong>Spam</strong> kategorio selektesis.
       add_to_report: Insertez pluse a raporto
       are_you_sure: Ka vu esas certa?
@@ -624,7 +605,6 @@ io:
         other: "%{count} uzanti"
       categories:
         administration: Administro
-        devops: Developeri
         invites: Inviti
         moderation: Jero
         special: Specala
@@ -675,7 +655,6 @@ io:
         view_audit_log_description: Permisez uzanti vidar historio di administrala agi en la servilo
         view_dashboard: Videz chefpanelo
         view_dashboard_description: Permisez uzanti uzar chefpanelo e diversa opcioni
-        view_devops: Developeri
         view_devops_description: Permisez uzanti uzar chefpaneli Sidekiq e pgHero
       title: Roli
     rules:
@@ -686,79 +665,40 @@ io:
       empty: Nula servilreguli fixesis til nun.
       title: Servilreguli
     settings:
-      activity_api_enabled:
-        desc_html: Quanto de lokale publikigita posti, aktiva uzanti e nova registri quale semane faski
-        title: Publikigez rezumstatistiko pri uzantoaktiveso en API
-      bootstrap_timeline_accounts:
-        desc_html: Separez multopla uzantonomi kun komo. Ca konti garantiesos montresar en sequorekomendi
-        title: Rekomendez ca konti a nova uzanti
-      contact_information:
-        email: Enter a public e-mail address
-        username: Enter a username
-      custom_css:
-        desc_html: Modifikez aspekto kun CSS chargasas che singla pagino
-        title: Kustumizita CSS
-      default_noindex:
-        desc_html: Efektigar omna uzanti quo ne chanjis ca opciono per su
-        title: Despartoprenigez uzanti de trovmotorindexo quale originala stando
+      about:
+        manage_rules: Jerez servilreguli
+        preamble: Donez detaloza informi pri quale la servilo funcionar, jeresar e moyenigesar.
+        rules_hint: Havas partikulara areo por reguli quo uzanti expektesar sequar.
+        title: Pri co
+      appearance:
+        preamble: Kustumizitez retintervizajo di Mastodon.
+        title: Aspekto
+      branding:
+        preamble: Fabrikmarko di ca servilo diferentigas lu de altra servili en la reto. Ca informi forsan montresas che diversa loki. Do, ca informi debas esar klara.
+        title: Fabrikmarkeso
+      content_retention:
+        preamble: Dominacez quale uzantigita kontenajo retenesar en Mastodon.
+        title: Kontenajreteneso
+      discovery:
+        follow_recommendations: Sequez rekomendaji
+        preamble: Montrar interesanta kontenajo esas importanta ye voligar nova uzanti quo forsan ne savas irgu. Dominacez quale ca deskovrotraiti funcionar en ca servilo.
+        profile_directory: Profilcheflisto
+        public_timelines: Publika tempolinei
+        title: Deskovro
+        trends: Tendenci
       domain_blocks:
         all: A omnu
         disabled: A nulu
-        title: Montrez domenobstrukti
         users: A enirinta lokala uzanti
-      domain_blocks_rationale:
-        title: Montrez motivo
-      mascot:
-        desc_html: Montresas che multa chefpagino. Minime 293x205px rekomendesas. Se ne fixesis, ol retrouzas reprezentanto
-        title: Reprezenterimajo
-      peers_api_enabled:
-        desc_html: Domennomo quon ca servilo renkontris en fediverso
-        title: Publikigez listo di deskovrita servili en API
-      preview_sensitive_media:
-        desc_html: Ligilprevidi che altra retsiti montros imajeto mem se medii markizesas quale sentoza
-        title: Montrez sentoza medii e OpenGraph previdi
-      profile_directory:
-        desc_html: Permisez uzanti deskovresar
-        title: Aktivigez profilcheflisto
       registrations:
-        closed_message:
-          desc_html: Displayed on frontpage when registrations are closed<br>You can use HTML tags
-          title: Mesajo di klozita registro
-        require_invite_text:
-          desc_html: Se registri bezonas manuala aprobo, kauzigar "Por quo vu volas juntar?" textoenpoz divenar obligata
-          title: Bezonez nova uzanti insertar motivo por juntar
+        preamble: Dominacez qua povas krear konto en ca servilo.
+        title: Registragi
       registrations_mode:
         modes:
           approved: Aprobo bezonesas por registro
           none: Nulu povas registrar
           open: Irgu povas registrar
-        title: Registromodo
-      site_description:
-        desc_html: Displayed as a paragraph on the frontpage and used as a meta tag.<br>You can use HTML tags, in particular <code>&lt;a&gt;</code> and <code>&lt;em&gt;</code>.
-        title: Site description
-      site_description_extended:
-        desc_html: Displayed on extended information page<br>You can use HTML tags
-        title: Extended site description
-      site_short_description:
-        desc_html: Montresas en flankobaro e metatagi. Deskriptez Mastodon e por quo ca servilo esas specala per 1 paragrafo.
-        title: Kurta servildeskripto
-      site_terms:
-        desc_html: Vu povas adjuntar sua privatesguidilo. Vu povas uzar tagi di HTML
-        title: Kustumizita privatesguidilo
-      site_title: Site title
-      thumbnail:
-        desc_html: Uzesis por previdi tra OpenGraph e API. 1200x630px rekomendesas
-        title: Servilimajeto
-      timeline_preview:
-        desc_html: Montrez ligilo e publika tempolineo che atingopagino e permisez API acesar publika tempolineo sen yurizo
-        title: Permisez neyurizita aceso a publika tempolineo
-      title: Site Settings
-      trendable_by_default:
-        desc_html: Partikulara trendoza kontenajo povas ankore videbla nepermisesar
-        title: Permisez hashtagi divenies tendencoza sen bezonata kontrolo
-      trends:
-        desc_html: Publika montrez antee kontrolita kontenajo quo nun esas tendencoza
-        title: Tendenci
+      title: Servilopcioni
     site_uploads:
       delete: Efacez adchargita failo
       destroyed_msg: Sitadchargito sucesoze efacesis!
@@ -812,6 +752,9 @@ io:
         description_html: Co esas ligili quo nun multe partigesas da konti kun posti quon vua servilo vidas. Ol povas helpar vua uzanti lernar quo eventas en mondo. Ligili ne publike montresas til vu aprobar publikiganto. Vu povas anke permisar o refuzar individuala ligili.
         disallow: Despermisez ligilo
         disallow_provider: Despermisez publikiganto
+        no_link_selected: Nula ligili chanjesis pro ke nulo selektesis
+        publishers:
+          no_publisher_selected: Nula publikiganti chanjesis pro ke nulo selektesis
         shared_by_over_week:
           one: Partigesis da 1 persono de pos antea semano
           other: Partigesis da %{count} personi de pos antea semano
@@ -831,6 +774,7 @@ io:
         description_html: Co esas posti quon vua servilo savas quale nun partigesas e favorizesas multe nun. Ol povas helpar vua nova e retrovenanta uzanti trovar plu multa personi por sequar. Posti ne publike montresas til vu aprobar la skribanto, e la skribanto permisas sua konto sugestesas a altra personi. Vu povas anke permisar o refuzar individuala posti.
         disallow: Despermisez posto
         disallow_account: Despermisez skribanto
+        no_status_selected: Nula tendencoza posti chanjesis pro ke nulo selektesis
         not_discoverable: Skribanto ne konsentis pri esar deskovrebla
         shared_by:
           one: Partigesis o favorizesis 1 foye
@@ -846,6 +790,7 @@ io:
           tag_uses_measure: uzsumo
         description_html: Co esas hashtagi quo nun aparas en multa posti quon vua servilo vidas. Ol povas helpar vua uzanti lernar quon personi parolas frequente nun. Hashtagi ne montresas publike til vu aprobar.
         listable: Povas sugestesar
+        no_tag_selected: Nula tagi chanjesis pro ke nulo selektesis
         not_listable: Ne sugestesar
         not_trendable: Ne aparas che tendenci
         not_usable: Ne povas uzesar
@@ -951,14 +896,12 @@ io:
     warning: Sorgemez per ca informi. Ne partigez kun irgu!
     your_token: Vua acesficho
   auth:
-    change_password: Pasvorto
     delete_account: Efacez konto
     delete_account_html: Se vu volas efacar vua konto, vu povas <a href="%{path}">irar hike</a>. Vu demandesos konfirmar.
     description:
       prefix_invited_by_user: "@%{name} invitas vu juntar ca servilo di Mastodon!"
       prefix_sign_up: Registrez che Mastodon hodie!
       suffix: Per konto, vu povos sequar personi, postigar novaji e interchanjar mesaji kun uzanti de irga servilo di Mastodon e pluse!
-    didnt_get_confirmation: Ka tu ne recevis la instrucioni por konfirmar?
     dont_have_your_security_key: Ka vu ne havas sekuresklefo?
     forgot_password: Pasvorto obliviita?
     invalid_reset_password_token: Pasvorto richanjoficho esas nevalida o expirita. Demandez novo.
@@ -970,19 +913,21 @@ io:
     migrate_account: Transferez a diferanta konto
     migrate_account_html: Se vu volas ridirektar ca konto a diferanto, vu povas <a href="%{path}">ajustar hike</a>.
     or_log_in_with: O eniras per
+    privacy_policy_agreement_html: Me lektis e konsentis <a href="%{privacy_policy_path}" target="_blank">privatesguidilo</a>
     providers:
       cas: CAS
       saml: SAML
     register: Membreskar
     registration_closed: "%{instance} ne aceptas nova membri"
-    resend_confirmation: Risendar la instrucioni por konfirmar
     reset_password: Chanjar la pasvorto
+    rules:
+      preamble: Co igesas e exekutesas da jereri di %{domain}.
+      title: Kelka bazala reguli.
     security: Chanjar pasvorto
     set_new_password: Selektar nova pasvorto
-    setup:
-      email_below_hint_html: Se suba retpostoadreso esas nekorekta, vu povas chanjar hike e ganar nova konfirmretposto.
-      email_settings_hint_html: Konfirmretposto sendesis a %{email}. Se ta retpostoadreso ne esas korekta, vu povas chanjar en kontoopcioni.
-      title: Komencoprocedo
+    sign_up:
+      preamble: Per konto en ca servilo di Mastodon, on povas sequar irga persono en ca reto, ne ye ube ona konto hostagisas.
+      title: Ni komencigez vu en %{domain}.
     status:
       account_status: Kontostando
       confirming: Vartas retpostokonfirmo finar.
@@ -1115,8 +1060,6 @@ io:
     storage: Konservado di kontenajo
   featured_tags:
     add_new: Insertez novo
-    errors:
-      limit: Vu ja estelis maxima hashtagi
     hint_html: "<strong>Quo esas estelita hashtagi?</strong> Ol montresas eminente che vua publika profilo e povigas personi vidar vua publika posti partikulare kun ta hashtagi. Oli esas bona utensilo por jeretar kreiva agaji e longa projetaji."
   filters:
     contexts:
@@ -1160,11 +1103,6 @@ io:
       index:
         hint: Ca filtrilo aplikesas a selektita posti ne segun altra kriterio. Vu povas pozar plu multa posti a ca filtrilo de retintervizajo.
         title: Filtrita posti
-  footer:
-    developers: Developeri
-    more: Pluse…
-    resources: Moyeni
-    trending_now: Nuna tendenco
   generic:
     all: Omna
     all_items_on_page_selected_html:
@@ -1187,8 +1125,6 @@ io:
     validation_errors:
       one: Ulo ne eventis senprobleme! Voluntez konsultar la suba eror-raporto
       other: Ulo ne eventis senprobleme! Voluntez konsultar la suba %{count} eror-raporti
-  html_validator:
-    invalid_markup: 'kontenas nevalida kompozuro di HTML: %{error}'
   imports:
     errors:
       over_rows_processing_limit: kontenas plu kam %{count} horizontala lineo
@@ -1206,7 +1142,6 @@ io:
       following: Listo de sequati
       muting: Silenciglisto
     upload: Kargar
-  in_memoriam_html: Memorialo.
   invites:
     delete: Deaktivigez
     expired: Expiris
@@ -1229,9 +1164,6 @@ io:
       expires_at: Expiros
       uses: Uzi
     title: Invitez personi
-  lists:
-    errors:
-      limit: Vu astingas maxima listi
   login_activities:
     authentication_methods:
       otp: 2-faktoryurizessoftwaro
@@ -1285,6 +1217,8 @@ io:
     carry_blocks_over_text: Ca uzanti transferesis de %{acct} quon vu restriktis.
     carry_mutes_over_text: Ca uzanti transferesis de %{acct} quon vu silencigis.
     copy_account_note_text: 'Ca uzanti transferesis de %{acct}, co esas vua antea noti pri ol:'
+  navigation:
+    toggle_menu: Baskulez menuo
   notification_mailer:
     admin:
       report:
@@ -1362,6 +1296,8 @@ io:
     other: Altra
     posting_defaults: Originala postoopcioni
     public_timelines: Publika tempolinei
+  privacy_policy:
+    title: Privatesguidilo
   reactions:
     errors:
       limit_reached: Limito di diferanta reakto atingesis
@@ -1384,22 +1320,7 @@ io:
     remove_selected_follows: Desequez selektita uzanti
     status: Kontostando
   remote_follow:
-    acct: Enpozez tua uzernomo@instaluro de ube tu volas sequar ta uzero
     missing_resource: La URL di plussendado ne povis esar trovita
-    no_account_html: Ka vu ne havas konto? Vu povas <a href='%{sign_up_path}' target='_blank'>registrar hike</a>
-    proceed: Durar por plussendar
-    prompt: 'Tu sequeskos:'
-    reason_html: "<strong>Por quo ca demarsho bezonesas?</strong> <code>%{instance}</code> forsan ne esas servilo ube vu registris, do ni bezonas ridirektar vu a vua hemservilo unesme."
-  remote_interaction:
-    favourite:
-      proceed: Durez favorizar
-      prompt: 'Vu povas favorizar ca posto:'
-    reblog:
-      proceed: Durez bustar
-      prompt: 'Vu volas bustar ca posto:'
-    reply:
-      proceed: Durez respondar
-      prompt: 'Vu volas respondar ca posto:'
   reports:
     errors:
       invalid_rules: ne refera valida reguli
@@ -1417,7 +1338,7 @@ io:
     browser: Vidilo
     browsers:
       alipay: Alipay
-      blackberry: Blackberry
+      blackberry: BlackBerry
       chrome: Chrome
       edge: Microsoft Edge
       electron: Electron
@@ -1431,7 +1352,7 @@ io:
       phantom_js: PhantomJS
       qq: Vidilo QQ
       safari: Safari
-      uc_browser: UCBrowser
+      uc_browser: UC Browser
       weibo: Weibo
     current_session: Nuna sesiono
     description: "%{browser} che %{platform}"
@@ -1440,13 +1361,12 @@ io:
     platforms:
       adobe_air: Adobe Air
       android: Android
-      blackberry: Blackberry
-      chrome_os: Chrome OS
+      blackberry: BlackBerry
+      chrome_os: ChromeOS
       firefox_os: Firefox OS
       ios: iOS
       linux: Linux
       mac: macOS
-      other: nesavata platformo
       windows: Windows
       windows_mobile: Windows Mobile
       windows_phone: Windows Phone
@@ -1559,7 +1479,6 @@ io:
       '7889238': 3 monati
     min_age_label: Oldeslimito
     min_favs: Retenez favorizita posti mine
-    min_favs_hint: Ne efacas irga vua posti quo ganis mine ca favorizquanto. Restez quale vakua por efacar posti sen suciar olia favorizquanto
     min_reblogs: Retenez bustita posti mine
     min_reblogs_hint: Ne efacas irga vua posti quo bustigesos mine ca foyoquanto. Restez quale vakua por efacar posti sen suciar olia foyoquanto
   stream_entries:
@@ -1649,8 +1568,10 @@ io:
         suspend: Konto restriktigesis
     welcome:
       edit_profile_action: Facez profilo
+      edit_profile_step: Vu povas kustumizar vua profilo per adchargar profilimajo, chanjesar vua montronomo e plue. Vu povas selektas kontrolar nova sequanti ante oli permisesas sequar vu.
       explanation: Subo esas guidilo por helpar vu komencar
       final_action: Komencez postigar
+      final_step: 'Jus postigez! Mem sen sequanti, vua publika posti povas videsar da altra personi, exemplo es en lokala tempolineo e en hashtagi. Vu povas anke introduktar su en #introductions hashtagi.'
       full_handle: Vua kompleta profilnomo
       full_handle_hint: Co esas quon vu dicos a amiki por ke oli povas mesajigar o sequar vu de altra servilo.
       subject: Bonveno a Mastodon
@@ -1662,7 +1583,6 @@ io:
     seamless_external_login: Vu enirar tra externa serveso, do pasvorto e retpostoopcioni ne esas disponebla.
     signed_in_as: 'Eniris quale:'
   verification:
-    explanation_html: 'Vu povas <strong>verifikar su kom proprietero di ligili en vua profilmetainformi</strong>. En ta kazo, ligita retsito <strong>mustas</strong> havar <code>rel="me"</code> atributo. Textokontenajo di ligilo ne esas importanta. Co esas exemplo:'
     verification: Verifikeso
   webauthn_credentials:
     add: Insertez nova sekuresklefo

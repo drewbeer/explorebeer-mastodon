@@ -12,16 +12,14 @@ class InstancePresenter < ActiveModelSerializers::Model
     end
 
     def account
-      Account.find_local(Setting.site_contact_username.strip.gsub(/\A@/, ''))
+      username, domain = Setting.site_contact_username.strip.gsub(/\A@/, '').split('@', 2)
+      domain = nil if TagManager.instance.local_domain?(domain)
+      Account.find_remote(username, domain) if username.present?
     end
   end
 
   def contact
     ContactPresenter.new
-  end
-
-  def closed_registrations_message
-    Setting.closed_registrations_message
   end
 
   def description
@@ -32,8 +30,8 @@ class InstancePresenter < ActiveModelSerializers::Model
     Setting.site_extended_description
   end
 
-  def privacy_policy
-    Setting.site_terms
+  def status_page_url
+    Setting.status_page_url
   end
 
   def domain
@@ -66,10 +64,6 @@ class InstancePresenter < ActiveModelSerializers::Model
 
   def domain_count
     Rails.cache.fetch('distinct_domain_count') { Instance.count }
-  end
-
-  def sample_accounts
-    Rails.cache.fetch('sample_accounts', expires_in: 12.hours) { Account.local.discoverable.popular.limit(3) }
   end
 
   def version

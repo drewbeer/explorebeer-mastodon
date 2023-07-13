@@ -4,15 +4,25 @@ module WebAppControllerConcern
   extend ActiveSupport::Concern
 
   included do
-    before_action :set_body_classes
-    before_action :set_referrer_policy_header
+    prepend_before_action :redirect_unauthenticated_to_permalinks!
+    before_action :set_app_body_class
+
+    vary_by 'Accept, Accept-Language, Cookie'
   end
 
-  def set_body_classes
+  def skip_csrf_meta_tags?
+    current_user.nil?
+  end
+
+  def set_app_body_class
     @body_classes = 'app-body'
   end
 
-  def set_referrer_policy_header
-    response.headers['Referrer-Policy'] = 'origin'
+  def redirect_unauthenticated_to_permalinks!
+    return if user_signed_in? && current_account.moved_to_account_id.nil?
+
+    redirect_path = PermalinkRedirector.new(request.path).redirect_path
+
+    redirect_to(redirect_path) if redirect_path.present?
   end
 end

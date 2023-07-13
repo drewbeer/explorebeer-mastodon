@@ -5,6 +5,7 @@ class Api::V1::Timelines::TagController < Api::BaseController
   after_action :insert_pagination_headers, unless: -> { @statuses.empty? }
 
   def show
+    cache_if_unauthenticated!
     @statuses = load_statuses
     render json: @statuses, each_serializer: REST::StatusSerializer, relationships: StatusRelationshipsPresenter.new(@statuses, current_user&.account_id)
   end
@@ -36,7 +37,6 @@ class Api::V1::Timelines::TagController < Api::BaseController
     TagFeed.new(
       @tag,
       current_account,
-      locale: content_locale,
       any: params[:any],
       all: params[:all],
       none: params[:none],

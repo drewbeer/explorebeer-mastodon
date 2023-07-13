@@ -2,45 +2,25 @@
 co:
   about:
     about_mastodon_html: 'A rete suciale di u futuru: micca pubblicità, micca surveglianza, cuncezzione etica, è dicentralizazione! Firmate in cuntrollu di i vostri dati cù Mastodon!'
-    api: API
-    apps: Applicazione per u telefuninu
     contact_missing: Mancante
     contact_unavailable: Micca dispunibule
-    documentation: Ducumentazione
     hosted_on: Mastodon allughjatu nant’à %{domain}
-    source_code: Codice di fonte
-    what_is_mastodon: Quale hè Mastodon?
   accounts:
-    choices_html: "%{name} ricumanda:"
-    endorsements_hint: Pudete appughjà i conti chì siguitate dapoi l'interfaccia web, è saranu mustrati quì.
-    featured_tags_hint: Pudete mette in mostra qualchì hashtag chì saranu affissati quì.
     follow: Siguità
     followers:
       one: Abbunatu·a
       other: Abbunati
     following: Abbunamenti
     instance_actor_flash: Stu contu virtuale riprisenta u servore stessu, micca un'utilizatore individuale. Hè utilizatu per scopi di federazione è ùn duveria mai esse suspesu.
-    joined: Quì dapoi %{date}
     last_active: ultima attività
     link_verified_on: A pruprietà d'issu ligame hè stata verificata u %{date}
-    media: Media
-    moved_html: "%{name} hà cambiatu di contu, avà hè nant’à %{new_profile_link}:"
-    network_hidden: St'infurmazione ùn hè micca dispunibule
     nothing_here: Ùn c’hè nunda quì!
-    people_followed_by: Seguitati da %{name}
-    people_who_follow: Seguitanu %{name}
     pin_errors:
       following: Duvete digià siguità a persona che vulete ricumandà
     posts:
       one: Statutu
       other: Statuti
     posts_tab_heading: Statuti
-    posts_with_replies: Statuti è risposte
-    roles:
-      bot: Bot
-      group: Gruppu
-    unavailable: Prufile micca dispunibule
-    unfollow: Ùn siguità più
   admin:
     account_actions:
       action: Realizà un'azzione
@@ -128,8 +108,6 @@ co:
       removed_header_msg: U ritrattu di cuprendula di %{username} hè statu toltu
       resend_confirmation:
         already_confirmed: St’utilizatore hè digià cunfirmatu
-        send: Rimandà un’e-mail di cunfirmazione
-        success: L’e-mail di cunfirmazione hè statu mandatu!
       reset: Riinizializà
       reset_password: Riinizializà a chjave d’accessu
       resubscribe: Riabbunassi
@@ -337,9 +315,7 @@ co:
         create: Creà un blucchime
         hint: U blucchime di duminiu ùn impedirà micca a creazione di conti indè a database, mà metudi di muderazione specifiche saranu applicati.
         severity:
-          desc_html: Cù <strong>Silenzà</strong>, solu l’abbunati di u contu viderenu i so missaghji. <strong>Suspende</strong> sguassarà tutti i cuntenuti è dati di u contu. Utilizate <strong>Nisuna</strong> s’è voi vulete solu righjittà fugliali media.
           noop: Nisuna
-          silence: Silenzà
           suspend: Suspende
         title: Novu blucchime di duminiu
       obfuscate: Uscurà u nome di duminiu
@@ -482,73 +458,15 @@ co:
       edit: Mudificà regula
       title: Regule di u servore
     settings:
-      activity_api_enabled:
-        desc_html: Numeri di statuti creati quì, utilizatori attivi, è arregistramenti novi tutte e settimane
-        title: Pubblicà statistiche nant’à l’attività di l’utilizatori
-      bootstrap_timeline_accounts:
-        desc_html: Cugnomi separati cù virgule. Solu pussibule cù conti lucali è pubblichi. Quandu a lista hè viota, tutti l’amministratori lucali saranu selezziunati.
-        title: Abbunamenti predefiniti per l’utilizatori novi
-      contact_information:
-        email: E-mail prufissiunale
-        username: Identificatore di cuntattu
-      custom_css:
-        desc_html: Mudificà l'apparenza cù CSS caricatu nant'à ogni pagina
-        title: CSS persunalizatu
-      default_noindex:
-        desc_html: Tocca tutti quelli ch'ùn anu micca cambiatu stu parametru
-        title: Ritirà l'utilizatori di l'indicazione nant'à i mutori di ricerca
       domain_blocks:
         all: À tutti
         disabled: À nimu
-        title: Mustrà blucchime di duminiu
         users: À l'utilizatori lucali cunnettati
-      domain_blocks_rationale:
-        title: Vede ragiò
-      mascot:
-        desc_html: Affissata nant'à parechje pagine. Almenu 293x205px ricumandatu. S'ella hè lasciata viota, a mascotta predefinita sarà utilizata
-        title: Ritrattu di a mascotta
-      peers_api_enabled:
-        desc_html: Indirizzi web stu servore hà vistu indè u fediversu
-        title: Pubblicà a lista di servori cunnisciuti
-      preview_sensitive_media:
-        desc_html: E priviste di i ligami nant'à l'altri siti mustreranu una vignetta ancu s'ellu hè marcatu cum'è sensibile u media
-        title: Vede media sensibili in e viste OpenGraph
-      profile_directory:
-        desc_html: Auturizà a scuperta di l'utilizatori
-        title: Attivà l'annuariu di i prufili
-      registrations:
-        closed_message:
-          desc_html: Affissatu nant’a pagina d’accolta quandu l’arregistramenti sò chjosi. Pudete fà usu di u furmattu HTML
-          title: Missaghju per l’arregistramenti chjosi
-        require_invite_text:
-          desc_html: Quandu l'arregistramenti necessitanu un'apprubazione manuale, fà chì u testu "Perchè vulete ghjunghje?" sia ubligatoriu invece d'esse facultativu
-          title: Richiede chì i novi utilizatori empiinu una dumanda d'invitazione
       registrations_mode:
         modes:
           approved: Apprubazione necessaria per arregistrassi
           none: Nimu ùn pò arregistrassi
           open: Tutt'ognunu pò arregistrassi
-        title: Modu d'arregistramenti
-      site_description:
-        desc_html: Paragrafu di prisentazione nant’a pagina d’accolta. Parlate di cio chì rende stu servore speziale, o d'altre cose impurtante. Pudete fà usu di marchi HTML, in particulare <code>&lt;a&gt;</code> è <code>&lt;em&gt;</code>.
-        title: Discrizzione di u servore
-      site_description_extended:
-        desc_html: Una bona piazza per e regule, infurmazione è altre cose chì l’utilizatori duverìanu sapè. Pudete fà usu di marchi HTML
-        title: Discrizzione stesa di u situ
-      site_short_description:
-        desc_html: Mustratu indè a barra laterala è i tag meta. Spiegate quale hè Mastodon è ciò chì rende u vostru servore speciale in un paragrafu. S'ella hè lasciata viota, a discrizzione di u servore sarà utilizata.
-        title: Descrizzione corta di u servore
-      site_title: Nome di u servore
-      thumbnail:
-        desc_html: Utilizatu per viste cù OpenGraph è l’API. Ricumandemu 1200x630px
-        title: Vignetta di u servore
-      timeline_preview:
-        desc_html: Vede a linea pubblica nant’a pagina d’accolta
-        title: Vista di e linee
-      title: Parametri di u situ
-      trends:
-        desc_html: Mustrà à u pubblicu i hashtag chì sò stati digià verificati è chì sò in e tendenze avà
-        title: Tendenze di hashtag
     site_uploads:
       delete: Sguassà u fugliale caricatu
       destroyed_msg: Fugliale sguassatu da u situ!
@@ -635,14 +553,12 @@ co:
     warning: Abbadate à quessi dati. Ùn i date à nisunu!
     your_token: Rigenerà a fiscia d’accessu
   auth:
-    change_password: Chjave d’accessu
     delete_account: Sguassà u contu
     delete_account_html: S’è voi vulete toglie u vostru contu <a href="%{path}">ghjè quì</a>. Duverete cunfirmà a vostra scelta.
     description:
       prefix_invited_by_user: "@%{name} v'invita à raghjunghje stu servore di Mastodon!"
       prefix_sign_up: Arregistratevi nant'à Mastodon oghji!
       suffix: Cù un contu, puderete siguità l'altri, pustà statuti è scambià missaghji cù l'utilizatori di tutti i servori Mastodon è ancu di più!
-    didnt_get_confirmation: Ùn avete micca ricevutu l’istruzione di cunfirmazione?
     dont_have_your_security_key: Ùn avete micca a chjave di sicurità?
     forgot_password: Chjave scurdata?
     invalid_reset_password_token: U ligame di riinizializazione di a chjave d’accessu hè spiratu o ùn hè micca validu. Pudete dumandà un'altru ligame.
@@ -658,14 +574,9 @@ co:
       saml: SAML
     register: Arregistrassi
     registration_closed: "%{instance} ùn accetta micca novi socii"
-    resend_confirmation: Rimandà l’istruzzioni di cunfirmazione
     reset_password: Cambià a chjave d’accessu
     security: Sicurità
     set_new_password: Creà una nova chjave d’accessu
-    setup:
-      email_below_hint_html: S'è l'indirizzu e-mail quì sottu ùn hè micca currettu, pudete cambiallu quì è riceve un novu e-mail di cunfirmazione.
-      email_settings_hint_html: L'e-mail di cunfirmazione hè statu mandatu à l'indirizzu %{email}. S'ellu ùn hè micca currettu, pudete cambiallu in i parametri di u contu.
-      title: Stallazione
     status:
       account_status: Statutu di u contu
       confirming: In attesa di a cumplezzione di a cunfirmazione di l'e-mail.
@@ -766,8 +677,6 @@ co:
     storage: I vostri media
   featured_tags:
     add_new: Aghjunghje
-    errors:
-      limit: Avete digià messu in mostra u numeru massimale di hashtag
     hint_html: "<strong>Quale sò i hashtag in mostra?</strong> Sò messi in vista nant'à u vostru prufile pubblicu è permettenu à a ghjente di vede i vostri statuti ch'annu stu hashtag. Sò una bona manere di mustrà e vostre opere creative o i prughjetti à longu termine."
   filters:
     contexts:
@@ -786,11 +695,6 @@ co:
       title: Filtri
     new:
       title: Aghjunghje un novu filtru
-  footer:
-    developers: Sviluppatori
-    more: Di più…
-    resources: Risorse
-    trending_now: Tindenze d'avà
   generic:
     all: Tuttu
     changes_saved_msg: Cambiamenti salvati!
@@ -801,8 +705,6 @@ co:
     validation_errors:
       one: Qualcosa ùn và bè! Verificate u prublemu quì sottu
       other: Qualcosa ùn và bè! Verificate %{count} prublemi quì sottu
-  html_validator:
-    invalid_markup: 'cuntene codice HTML invalidu: %{error}'
   imports:
     errors:
       over_rows_processing_limit: cuntene più di %{count} filari
@@ -820,7 +722,6 @@ co:
       following: Persone chì seguitate
       muting: Persone chì piattate
     upload: Impurtà
-  in_memoriam_html: In mimoria.
   invites:
     delete: Disattivà
     expired: Spirata
@@ -843,9 +744,6 @@ co:
       expires_at: Spira
       uses: Utiliza
     title: Invità ghjente
-  lists:
-    errors:
-      limit: Ùn pudete più creà altre liste
   login_activities:
     authentication_methods:
       otp: app d'identificazione à dui fattori
@@ -986,22 +884,7 @@ co:
     remove_selected_follows: Ùn siguità più l'utilizatori selezziunati
     status: Statutu di u contu
   remote_follow:
-    acct: Entrate u vostru cugnome@istanza da induve vulete siguità stu contu
     missing_resource: Ùn avemu pussutu à truvà l’indirizzu di ridirezzione
-    no_account_html: Ùn avete micca un contu? Pudete <a href='%{sign_up_path}' target='_blank'>arregistravi quì</a>
-    proceed: Cuntinuà per siguità
-    prompt: 'Avete da siguità:'
-    reason_html: "<strong>Perchè hè necessaria sta tappa?</strong> <code>%{instance}</code> ùn hè forse micca u servore induve site arregistratu·a, allora primu duvemu riindirizzavi à u vostru servore."
-  remote_interaction:
-    favourite:
-      proceed: Cuntinuà per favurisce
-      prompt: 'Vulete aghjunghje stu statutu à i vostri favuriti:'
-    reblog:
-      proceed: Cuntinuà per sparte
-      prompt: 'Vulete sparte stu statutu:'
-    reply:
-      proceed: Cuntinuà per risponde
-      prompt: 'Vulete risponde à stu statutu:'
   scheduled_statuses:
     over_daily_limit: Avete trapassatu a limita di %{limit} statuti pianificati per stu ghjornu
     over_total_limit: Avete trapassatu a limita di %{limit} statuti pianificati
@@ -1011,7 +894,6 @@ co:
     browser: Navigatore
     browsers:
       alipay: Alipay
-      blackberry: Blackberry
       chrome: Chrome
       edge: Microsoft Edge
       electron: Electron
@@ -1025,7 +907,6 @@ co:
       phantom_js: PhantomJS
       qq: QQ Browser
       safari: Safari
-      uc_browser: UCBrowser
       weibo: Weibo
     current_session: Sessione attuale
     description: "%{browser} nant’à %{platform}"
@@ -1034,13 +915,10 @@ co:
     platforms:
       adobe_air: Adobe Air
       android: Android
-      blackberry: Blackberry
-      chrome_os: ChromeOS
       firefox_os: Firefox OS
       ios: iOS
       linux: Linux
       mac: macOS
-      other: piattaforma scunnisciuta
       windows: Windows
       windows_mobile: Windows Mobile
       windows_phone: Windows Phone
@@ -1140,7 +1018,6 @@ co:
       '7889238': 3 mesi
     min_age_label: Età minima
     min_favs: Cunservà i statuti favurizzati più di
-    min_favs_hint: Ùn sguassa micca i vostri statuti chì anu ricevuti più chì stu numeru di favuriti. Lasciate viotu per sguassà i statuti senza piglià in contu u numaru di favuriti
     min_reblogs: Cunservà i statuti spartuti più di
     min_reblogs_hint: Ùn sguassa micca i vostri statuti chì anu ricevuti più chì stu numeru di spartere. Lasciate viotu per sguassà i statuti senza piglià in contu u numaru di spartere
   stream_entries:
@@ -1203,7 +1080,6 @@ co:
     seamless_external_login: Site cunnettatu·a dapoi un serviziu esternu, allora i parametri di chjave d’accessu è d’indirizzu e-mail ùn so micca dispunibili.
     signed_in_as: 'Cunnettatu·a cum’è:'
   verification:
-    explanation_html: 'Pudete <strong>verificavi cum''è u pruprietariu di i ligami in i metadati di u vostru prufile</strong>. Per quessa, u vostru situ deve avè un ligame versu a vostra pagina Mastodon. U ligame <strong>deve</strong> avè un''attributu <code>rel="me"</code>. U cuntenutu di u testu di u ligame ùn hè micca impurtante. Eccu un''esempiu:'
     verification: Verificazione
   webauthn_credentials:
     add: Aghjunghje una chjave di sicurità

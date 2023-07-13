@@ -8,12 +8,12 @@ cs:
       user:
         agreement: Souhlas s podmínkami
         email: E-mailová adresa
-        locale: Lokalizace
+        locale: Jazyk
         password: Heslo
       user/account:
-        username: Uživatel
+        username: Uživatelské jméno
       user/invite_request:
-        text: Zdůvodnění
+        text: Důvod
     errors:
       models:
         account:
@@ -29,6 +29,10 @@ cs:
           attributes:
             website:
               invalid: není platná URL
+        import:
+          attributes:
+            data:
+              malformed: je chybný
         status:
           attributes:
             reblog:
